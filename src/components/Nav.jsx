@@ -2,7 +2,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Heart, User, LogOut } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 import { useI18n } from '../data/i18n';
-import { useAuth, signInWithGoogle, signOut } from '../data/AuthContext';
+import { useAuth, signOut } from '../data/AuthContext';
 
 const LANG_FLAGS = { is: 'IS', en: 'EN', pl: 'PL' };
 
@@ -79,7 +79,7 @@ function UserButton({ user, t }) {
 
   if (!user) {
     return (
-      <button onClick={async () => { try { await signInWithGoogle(); } catch {} }} style={{
+      <button onClick={() => navigate('/app/maelar')} style={{
         display: 'flex', alignItems: 'center', gap: 6, padding: '0.4rem 0.9rem',
         borderRadius: 999, border: '1px solid var(--sage-light)', background: 'white',
         cursor: 'pointer', fontSize: '0.85rem', fontWeight: 500, color: 'var(--brown)',
