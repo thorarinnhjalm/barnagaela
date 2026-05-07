@@ -1,7 +1,8 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import {
   onAuthStateChanged,
-  signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   signOut as firebaseSignOut,
@@ -17,6 +18,7 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    getRedirectResult(auth).catch(() => {});
     return onAuthStateChanged(auth, async (firebaseUser) => {
       if (firebaseUser) {
         await ensureUserDoc(firebaseUser);
@@ -55,7 +57,7 @@ async function ensureUserDoc(u) {
 }
 
 export async function signInWithGoogle() {
-  return signInWithPopup(auth, googleProvider);
+  return signInWithRedirect(auth, googleProvider);
 }
 
 export async function signInWithEmail(email, password) {
