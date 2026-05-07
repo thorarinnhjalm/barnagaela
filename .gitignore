@@ -23,3 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 *.zip
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Firebase config
+src/data/firebase.js
