@@ -1,0 +1,366 @@
+export default {
+  lang: 'pl',
+  langLabel: 'Polski',
+
+  nav: {
+    openGuide: 'Otwórz poradnik',
+    home: '← Strona główna',
+  },
+
+  landing: {
+    badge: 'Bezpłatnie · Bez rejestracji',
+    headline: 'Pomoc dla zmęczonych rodziców',
+    subheadline: 'Wskazówki oparte na badaniach naukowych dotyczące płaczu, snu i karmienia dzieci w wieku 0–24 miesięcy.',
+    cta: 'Otwórz poradnik',
+    pillarsTitle: 'Trzy główne tematy',
+    pillarsSubtitle: 'Wszystko, o co rodzice dzieci 0–24 miesięcy pytają najczęściej.',
+    pillarCrying: 'Dlaczego dziecko płacze i jak reagować.',
+    pillarSleep: 'Rytm snu, nocne budzenie się i odpoczynek dla wszystkich.',
+    pillarFeeding: 'Mleko matki, butelka i pierwsze posiłki.',
+    featuresTitle: 'Co zawiera poradnik',
+    featureDiaryTitle: 'Dziennik',
+    featureDiaryDesc: 'Rejestruj płacz, sen i karmienie. Obserwuj wzorce w czasie.',
+    featureEmergencyTitle: 'Plan awaryjny',
+    featureEmergencyDesc: 'Gdy czujesz się przytłoczona/y — instrukcje krok po kroku.',
+    featureExpertTitle: 'Porady ekspertów',
+    featureExpertDesc: 'Treści oparte na badaniach naukowych, nie na domysłach.',
+    featureSelfCareTitle: 'Samoopieka',
+    featureSelfCareDesc: 'Wskazówki, jak zadbać o siebie, opiekując się dzieckiem.',
+    reassuranceTitle: '„Nie jesteś sam/a.\nTo jest trudne."',
+    reassuranceBody: 'Wszystkie dzieci płaczą. Nikt nie śpi wystarczająco. Karmienie jest trudniejsze, niż się spodziewamy. Ten poradnik jest tu, by pomóc — nie oceniać.',
+    ctaBottomTitle: 'Zacznij teraz — bezpłatnie',
+    ctaBottomSubtitle: 'Bez rejestracji. Bez opłat. Zawsze dostępne.',
+    ctaBottomButton: 'Otwórz poradnik →',
+  },
+
+  sidebar: {
+    heading: 'Poradnik',
+    crying: 'Płacz',
+    sleep: 'Sen',
+    feeding: 'Karmienie',
+    breathing: 'Oddech',
+    diary: 'Dziennik',
+    selfCare: 'Samoopieka',
+  },
+
+  topics: {
+    tipsHeading: 'Co możesz zrobić',
+
+    gratur: {
+      label: 'Płacz',
+      description: 'Dlaczego dziecko płacze i co pomaga',
+      intro: 'Płacz to jedyny sposób komunikacji niemowlęcia. To normalne i nie oznacza, że robisz coś źle. Wszystkie dzieci płaczą — jedne więcej niż inne. Jesteś dobrym rodzicem.',
+      tips: [
+        {
+          id: 'g1',
+          title: 'Sprawdź podstawowe potrzeby',
+          body: 'Zawsze zacznij od sprawdzenia, czy dziecko jest głodne, potrzebuje zmiany pieluchy lub jest zmęczone. To najczęstsze przyczyny płaczu u najmłodszych dzieci.',
+        },
+        {
+          id: 'g2',
+          title: 'Zawiń dziecko (otulenie)',
+          body: 'Ciasne owijanie naśladuje łono matki i daje wielu dzieciom poczucie bezpieczeństwa. Upewnij się, że główka jest wolna i dziecku nie jest za ciepło.',
+        },
+        {
+          id: 'g3',
+          title: 'Trzymaj dziecko w pozycji pionowej',
+          body: 'Delikatny ruch na ramieniu lub w ramionach może uspokoić dziecko. Spróbuj powoli chodzić po pokoju lub usiąść w bujanym fotelu.',
+        },
+        {
+          id: 'g4',
+          title: 'Włącz biały szum',
+          body: 'Stały dźwięk w tle — pralka, suszarka, wentylator lub specjalne aplikacje — naśladuje dźwięki z łona matki i pomaga wielu dzieciom się uspokoić.',
+        },
+        {
+          id: 'g5',
+          title: 'Połóż dziecko, jeśli źle się czujesz',
+          body: 'Jeśli czujesz frustrację lub przytłoczenie: połóż dziecko w bezpiecznym miejscu — w łóżeczku — i wyjdź do innego pokoju na 5 minut. To właściwa i odpowiedzialna reakcja.',
+        },
+      ],
+      emergency: {
+        title: 'Plan awaryjny',
+        steps: [
+          'Połóż dziecko w łóżeczku — na plecach, na płaskiej powierzchni',
+          'Wyjdź do innego pokoju',
+          'Weź 10 głębokich oddechów',
+          'Zadzwoń do kogoś, komu ufasz',
+        ],
+        note: 'Nie ma wstydu w potrzebowaniu pomocy. To jest trudne.',
+      },
+    },
+
+    svefn: {
+      label: 'Sen',
+      description: 'Rytm snu i odpoczynek dla dziecka i rodzica',
+      intro: 'Problemy ze snem to jeden z najczęstszych powodów, dla których rodzice szukają pomocy. Nie jesteś sam/a. Niedobór snu jest realny i wpływa na wszystko — daj sobie pozwolenie na priorytetowe traktowanie odpoczynku.',
+      tips: [
+        {
+          id: 's1',
+          title: 'Stwórz rytuał wieczorny',
+          body: 'Stała kolejność — np. kąpiel, balsam, bajka, kołysanka i sen — sygnalizuje dziecku, że nadchodzi noc. Nawet 15-minutowy rytuał może zrobić różnicę.',
+        },
+        {
+          id: 's2',
+          title: 'Kładź dziecko, gdy jest senne',
+          body: 'Spróbuj kłaść dziecko do łóżeczka, gdy jest senne, ale jeszcze nie śpi. To pomaga mu nauczyć się zasypiać samodzielnie — ważna umiejętność na dłuższą metę.',
+        },
+        {
+          id: 's3',
+          title: 'Unikaj nadmiernej stymulacji przed snem',
+          body: 'Godzinę przed snem: wyłącz ekrany, przyciemnij światło, ścisz dźwięki. Nadmiernie stymulowane dzieci mają trudności z wyciszeniem się.',
+        },
+        {
+          id: 's4',
+          title: 'Ciemny pokój i biały szum',
+          body: 'Ciemność wysyła sygnał do mózgu, żeby spać. Biały szum może pomóc dziecku zasnąć szybciej i spać dłużej. Obie metody są bezpieczne.',
+        },
+        {
+          id: 's5',
+          title: 'Zmieniajcie się na nocnych dyżurach',
+          body: 'Niedobór snu u rodziców to poważny problem zdrowotny. Jeśli to możliwe — zmieniajcie się z partnerem, dziadkami lub przyjacielem. Będziesz lepszym rodzicem po odpoczynku.',
+        },
+      ],
+    },
+
+    faeding: {
+      label: 'Karmienie',
+      description: 'Mleko matki, butelka i pierwsze posiłki',
+      intro: 'Niezależnie czy karmisz piersią czy butelką — robisz dobrze. Najważniejsze, żeby dziecko otrzymywało pożywienie i bliskość. Nie ma jednej właściwej drogi.',
+      tips: [
+        {
+          id: 'f1',
+          title: 'Noworodki jedzą co 2–3 godziny',
+          body: 'Żołądek noworodka jest maleńki — wielkości orzecha włoskiego. Częste karmienie jest normalne i nie oznacza, że robisz coś źle.',
+        },
+        {
+          id: 'f2',
+          title: 'Przyrost masy — najlepszy wskaźnik',
+          body: 'Jeśli dziecko dobrze przybiera na wadze i regularnie ma mokre pieluchy, karmienie idzie dobrze. Zdrowy przyrost to ok. 150–200 gramów tygodniowo u noworodków.',
+        },
+        {
+          id: 'f3',
+          title: 'Jeśli jest mało mleka',
+          body: 'Skontaktuj się z położną lub konsultantem laktacyjnym. Jest wiele sposobów na zwiększenie produkcji mleka — nie musisz zmagać się z tym sam/a.',
+        },
+        {
+          id: 'f4',
+          title: 'Odbijanie po posiłku',
+          body: 'Bąbelki powietrza mogą powodować dyskomfort i płacz. Pozwól dziecku się odbić przez 10–15 minut po każdym posiłku — trzymaj je w pozycji pionowej na ramieniu.',
+        },
+        {
+          id: 'f5',
+          title: 'Wprowadzanie pokarmów stałych (ok. 6 miesięcy)',
+          body: 'Zacznij prosto: miękkie warzywa (marchewka, dynia, fasolka), kaszki i owoce. Jeden nowy produkt na raz, żeby obserwować reakcje. Może być bałagan — tak dzieci się uczą.',
+        },
+      ],
+    },
+  },
+
+  selfCare: {
+    title: 'Samoopieka',
+    intro: 'Nie nalejesz z pustego kubka. Dbanie o siebie to część dbania o dziecko. Zasługujesz na dobre chwile.',
+    items: [
+      {
+        id: 'sc1',
+        title: 'Możesz prosić o pomoc',
+        body: 'Rodzicielstwo to nie gra solo. Potrzeba wioski, żeby wychować dziecko. Poproś przyjaciela, członka rodziny lub zaufanego sąsiada o pomoc — a gdy oferują, mów tak.',
+      },
+      {
+        id: 'sc2',
+        title: 'Małe przerwy mają znaczenie',
+        body: '10 minut na świeżym powietrzu, kawa w spokoju, prysznic — te małe przerwy ładują baterie. Nie potrzebujesz godziny, żeby się zregenerować.',
+      },
+      {
+        id: 'sc3',
+        title: 'Śpij, gdy dziecko śpi',
+        body: 'Tak, słyszałeś/aś to wcześniej. Nie, dom nie musi być posprzątany. Niedobór snu w pierwszych tygodniach to realne zagrożenie zdrowotne — wybieraj odpoczynek, gdy możesz.',
+      },
+      {
+        id: 'sc4',
+        title: 'Porozmawiaj z kimś',
+        body: 'Jeśli czujesz się przygnębiona/y, niespokojnie lub przytłoczona/y — porozmawiaj z lekarzem lub położną. Depresja i lęk poporodowy są częste i leczone. Proszenie o pomoc to siła.',
+      },
+      {
+        id: 'sc5',
+        title: 'Rodzicielstwo to nie zawsze błogość',
+        body: 'Można kochać dziecko i jednocześnie być zmęczonym, poirytowanym lub samotnym. Te uczucia idą w parze. Jesteś człowiekiem.',
+      },
+      {
+        id: 'sc6',
+        title: 'Połącz się z innymi rodzicami',
+        body: 'Rozmowa z rodzicami w podobnej sytuacji może wiele zmienić. Poszukaj grup rodziców w okolicy lub w internecie — nie jesteś w tym sam/a.',
+      },
+    ],
+    ctaTitle: 'Potrzebujesz z kimś porozmawiać?',
+    ctaBody: 'Twoja przychodnia jest do dyspozycji. Pracownik medyczny chce pomóc — także jeśli czujesz się przygnębiona/y lub niespokojnie po porodzie. Rozmowa nic nie kosztuje.',
+  },
+
+  diary: {
+    title: 'Dziennik',
+    subtitle: 'Rejestruj płacz, sen i karmienie. Dane są przechowywane na Twoim urządzeniu.',
+    dateLabel: 'Data i godzina',
+    categoryLabel: 'Kategoria',
+    notesLabel: 'Notatki (opcjonalnie)',
+    notesPlaceholder: 'Jak poszło? Co zauważyłeś/aś?',
+    addEntry: 'Dodaj wpis',
+    saved: 'Zapisano!',
+    empty: 'Brak wpisów. Zacznij rejestrować powyżej.',
+    entriesTitle: 'Wpisy',
+    deleteTooltip: 'Usuń wpis',
+    categories: {
+      gratur: 'Płacz',
+      svefn: 'Sen',
+      faeding: 'Karmienie',
+      almennt: 'Ogólne',
+    },
+  },
+
+  breathing: {
+    eyebrow: 'Oddychanie',
+    title: 'Oddychaj.',
+    intro: 'Przytrzymaj przycisk i podążaj za kołem. 60 sekund mierzalnie uspokaja układ nerwowy.',
+    whyTitle: 'Dlaczego to działa',
+    whyBody: 'Dłuższy wydech niż wdech aktywuje uspokajającą część układu nerwowego — układ parasympatyczny. To ta sama technika, której uczą położne podczas porodu.',
+    holdButton: 'Przytrzymaj',
+    holdInstruction: 'Przytrzymaj przycisk',
+    timing: '4 sek wdech · 4 sek pauza · 6 sek wydech',
+    breatheIn: 'Wdech',
+    hold: 'Pauza',
+    breatheOut: 'Wydech',
+    followCircle: 'Podążaj za kołem…',
+    cyclesSingular: 'cykl ukończony',
+    cyclesPlural: 'cykle ukończone',
+    ariaLabel: 'Przytrzymaj, aby oddychać',
+  },
+
+  auth: {
+    signIn: 'Zaloguj się',
+    signUp: 'Utwórz konto',
+    signOut: 'Wyloguj się',
+    email: 'Email',
+    password: 'Hasło',
+    displayName: 'Twoje imię',
+    googleSignIn: 'Kontynuuj z Google',
+    or: 'lub',
+    noAccount: 'Nie masz konta?',
+    haveAccount: 'Masz już konto?',
+    signingIn: 'Logowanie…',
+    error: 'Coś poszło nie tak. Spróbuj ponownie.',
+    gateTitle: 'Śledź dziecko',
+    gateBody: 'Zaloguj się, aby rejestrować karmienie, sen, płacz i wzrost — i widzieć wzorce w czasie.',
+  },
+
+  babyProfile: {
+    title: 'Profil dziecka',
+    addTitle: 'Dodaj dziecko',
+    editTitle: 'Edytuj profil',
+    nameLabel: 'Imię',
+    namePlaceholder: 'Imię dziecka',
+    dobLabel: 'Data urodzenia',
+    save: 'Zapisz',
+    saving: 'Zapisywanie…',
+    delete: 'Usuń dziecko',
+    deleteConfirm: 'Czy na pewno? Wszystkie dane tego dziecka zostaną usunięte.',
+    noBabies: 'Nie dodano jeszcze dzieci.',
+    addFirst: 'Dodaj pierwsze dziecko, aby rozpocząć śledzenie.',
+    addAnother: '+ Dodaj kolejne dziecko',
+  },
+
+  tracker: {
+    title: 'Tracker',
+    tabs: {
+      feeding: 'Karmienie',
+      sleep: 'Sen',
+      crying: 'Płacz',
+      growth: 'Wzrost',
+      patterns: 'Wzorce',
+    },
+    noEntries: 'Brak wpisów.',
+    entries: 'Wpisy',
+    today: 'Dzisiaj',
+    notes: 'Notatki (opcjonalnie)',
+    notesPlaceholder: 'Dodaj notatkę…',
+    log: 'Zapisz',
+    logging: 'Zapisywanie…',
+    delete: 'Usuń',
+    time: 'Czas',
+
+    feeding: {
+      title: 'Zapisz karmienie',
+      breastLeft: 'Lewa pierś',
+      breastRight: 'Prawa pierś',
+      bottle: 'Butelka',
+      solids: 'Stałe',
+      duration: 'Czas trwania (min)',
+      amount: 'Ilość (ml)',
+      todayTotal: 'karmień dzisiaj',
+    },
+
+    sleep: {
+      title: 'Sen',
+      start: 'Rozpocznij sen',
+      stop: 'Zakończ sen',
+      sleeping: 'Śpi…',
+      duration: 'Czas trwania (min)',
+      manualEntry: 'Dodaj wcześniejszy sen',
+      startTime: 'Czas rozpoczęcia',
+      endTime: 'Czas zakończenia',
+      totalToday: 'Łączny sen dzisiaj',
+      hours: 'godz',
+      minutes: 'min',
+    },
+
+    crying: {
+      title: 'Zapisz płacz',
+      duration: 'Czas trwania (min)',
+      whatHelped: 'Co pomogło?',
+      helped: {
+        swaddle: 'Otulenie',
+        whiteNoise: 'Biały szum',
+        walking: 'Spacer',
+        feeding: 'Karmienie',
+        diaper: 'Pielucha',
+        holding: 'Trzymanie',
+        nothing: 'Nic',
+      },
+      otherLabel: 'Inne',
+      seeGuide: 'Zobacz poradnik o płaczu →',
+    },
+
+    growth: {
+      title: 'Zapisz pomiar',
+      date: 'Data',
+      weight: 'Waga (kg)',
+      length: 'Długość (cm)',
+      measurements: 'Pomiary',
+    },
+
+    patterns: {
+      title: 'Wzorce',
+      periodToday: 'Dzisiaj',
+      period7d: '7 dni',
+      period30d: '30 dni',
+      feedingChart: 'Karmienie',
+      sleepChart: 'Sen',
+      cryingChart: 'Płacz',
+      growthChart: 'Wzrost',
+      noData: 'Za mało danych. Kontynuuj rejestrowanie!',
+    },
+  },
+
+  account: {
+    title: 'Konto',
+    signedInAs: 'Zalogowany/a jako',
+    signOut: 'Wyloguj się',
+    deleteAccount: 'Usuń konto',
+    deleteConfirm: 'Czy na pewno? To trwale usunie Twoje konto i wszystkie dane.',
+    deleting: 'Usuwanie…',
+  },
+
+  footer: {
+    description: 'Poradnik oparty na badaniach naukowych dla zmęczonych rodziców. Stworzony z miłością w Islandii.',
+    contentHeading: 'Treść',
+    disclaimer: 'Ten poradnik nie zastępuje porady lekarza. Jeśli podejrzewasz, że coś jest nie tak — skontaktuj się z lekarzem lub położną.',
+    copyright: 'Zrobione z ♥ w Islandii',
+  },
+};

@@ -1,0 +1,366 @@
+export default {
+  lang: 'is',
+  langLabel: 'Íslenska',
+
+  nav: {
+    openGuide: 'Opna leiðbeiningar',
+    home: '← Heim',
+  },
+
+  landing: {
+    badge: 'Frítt · Engin skráning',
+    headline: 'Hjálp fyrir þreytta foreldra',
+    subheadline: 'Vísindalegar leiðbeiningar um grát, svefn og fæðingu barna 0–24 mánaða.',
+    cta: 'Opna leiðbeiningar',
+    pillarsTitle: 'Þrjú meginsvið',
+    pillarsSubtitle: 'Allt sem foreldrar 0–24 mánaða barna spyrja um mest.',
+    pillarCrying: 'Hvers vegna grátir barnið og hvernig á að svara.',
+    pillarSleep: 'Svefnrútur, næturvakanir og hvíld fyrir alla.',
+    pillarFeeding: 'Brjóstamjólk, flaska og upphafsmat.',
+    featuresTitle: 'Hvað er í boði',
+    featureDiaryTitle: 'Dagbók',
+    featureDiaryDesc: 'Skráðu grát, svefn og fæðingu. Sjáðu mynstur yfir tíma.',
+    featureEmergencyTitle: 'Neyðaráætlun',
+    featureEmergencyDesc: 'Þegar þú ert yfirgnæfð/ur — skref-fyrir-skref leiðbeiningar.',
+    featureExpertTitle: 'Sérfræðiráð',
+    featureExpertDesc: 'Efni byggt á gæðarannsóknum, ekki getgátum.',
+    featureSelfCareTitle: 'Sjálfsumhyggja',
+    featureSelfCareDesc: 'Leiðbeiningar um að hlúa að þér meðan þú hlúir að barninu.',
+    reassuranceTitle: '„Þú ert ekki ein/n.\nÞetta er erfitt."',
+    reassuranceBody: 'Öll börn gráta. Enginn sefur nóg. Fæðing er erfiðari en við búumst við. Þessar leiðbeiningar eru hér til að hjálpa — ekki dæma.',
+    ctaBottomTitle: 'Byrjaðu núna — frítt',
+    ctaBottomSubtitle: 'Engin skráning. Engin greiðsla. Alltaf aðgengilegt.',
+    ctaBottomButton: 'Opna leiðbeiningar →',
+  },
+
+  sidebar: {
+    heading: 'Leiðbeiningar',
+    crying: 'Grátur',
+    sleep: 'Svefn',
+    feeding: 'Fæðing',
+    breathing: 'Anda',
+    diary: 'Dagbók',
+    selfCare: 'Sjálfsumhyggja',
+  },
+
+  topics: {
+    tipsHeading: 'Hvað er hægt að gera',
+
+    gratur: {
+      label: 'Grátur',
+      description: 'Af hverju grátir barnið og hvað hjálpar',
+      intro: 'Grátur er eini samskiptamáti ungbarna. Það er eðlilegt og þýðir ekki að þú sért að gera eitthvað rangt. Öll börn gráta — sum meira en önnur. Þú ert gott foreldri.',
+      tips: [
+        {
+          id: 'g1',
+          title: 'Athugaðu grunnþarfirnar',
+          body: 'Byrjaðu alltaf á að kanna hvort barnið sé svangt, þurrt eða þreytt. Þær þarfir eru algengasta ástæðan fyrir gráti hjá yngstu börnunum.',
+        },
+        {
+          id: 'g2',
+          title: 'Pakkaðu barnið inn (swaddle)',
+          body: 'Þéttar umbúðir líkja eftir móðurkviðnum og gefa mörgum börnum öryggi. Gakktu úr skugga um að höfuð sé laust og ekki of heitt.',
+        },
+        {
+          id: 'g3',
+          title: 'Gakktu með barnið upprétt',
+          body: 'Létt hreyfing á öxlinni þinni eða í fanginu þínu getur róað barn. Prófaðu að ganga hægt um herbergið eða setjast í gælustól.',
+        },
+        {
+          id: 'g4',
+          title: 'Kveiktu á hvítstyrk',
+          body: 'Stöðugt bakgrunnshljóð — þvottavél, þurrkari, vifta, eða sérstök hvítstyrkforrit — líkir eftir hljóðum móðurkviðsins og hjálpar mörgum börnum að róast.',
+        },
+        {
+          id: 'g5',
+          title: 'Settu barnið niður ef þér líður illa',
+          body: 'Ef þú finnur fyrir gremju eða yfirþyrmingu: settu barnið niður á öruggan stað — í rúmið eða vaggan — og farðu í annað herbergi í 5 mínútur. Þetta er rétt og ábyrgt.',
+        },
+      ],
+      emergency: {
+        title: 'Neyðaráætlun',
+        steps: [
+          'Settu barnið niður í rúmið — á bakið, á flatan grunn',
+          'Farðu í annað herbergi',
+          'Dragðu andann djúpt 10 sinnum',
+          'Hringdu í einhvern sem þú treystir',
+        ],
+        note: 'Það er aldrei skömm að þurfa hjálp. Þetta er erfitt.',
+      },
+    },
+
+    svefn: {
+      label: 'Svefn',
+      description: 'Svefnrútur og hvíld fyrir barn og foreldri',
+      intro: 'Svefnvandamál eru ein algengasta ástæðan fyrir því að foreldrar leita sér aðstoðar. Þú ert ekki ein/n. Svefnþraut er raunveruleg og hefur áhrif á allt — gefðu þér leyfi til að forgangsraða hvíld.',
+      tips: [
+        {
+          id: 's1',
+          title: 'Skapaðu svefnrútínu',
+          body: 'Föst röð — t.d. bað, smyrsl, saga, lag og svefn — gefur barninu merki um að nótt sé að koma. Jafnvel 15 mínútna rútína getur gert gæfumuninn.',
+        },
+        {
+          id: 's2',
+          title: 'Settu barnið niður þegar það er syfjað',
+          body: 'Reyndu að setja barnið í rúmið þegar það er syfjað en enn vakið. Þetta hjálpar því að læra að sofna sjálft — sem er mikilvæg færni til lengri tíma.',
+        },
+        {
+          id: 's3',
+          title: 'Forðastu of mikla örvun fyrir svefn',
+          body: 'Klukkustund fyrir svefn: slökkvum á skjám, dempum ljós, lækum hljóðstyrk. Örvuð börn eiga erfiðara með að slaka á.',
+        },
+        {
+          id: 's4',
+          title: 'Dökkt herbergi og hvítstyrkur',
+          body: 'Myrkur sendir merki til heilans um að sofa. Hvítstyrkur getur hjálpað barni að sofna hraðar og sofa lengur. Báðar aðferðirnar eru öruggar.',
+        },
+        {
+          id: 's5',
+          title: 'Skiptistu á um næturvaktir',
+          body: 'Svefnþraut foreldra er raunverulegt heilsuvandamál. Ef mögulegt er — skiptistu á við maka, ömmu, afa eða vin. Þú verður betra foreldri eftir hvíld.',
+        },
+      ],
+    },
+
+    faeding: {
+      label: 'Fæðing',
+      description: 'Brjóstamjólk, flaska og upphafsmat',
+      intro: 'Hvort sem þú gefur brjóst eða flösku — þú ert að gera það rétta. Mikilvægast er að barnið fái næringu og nálægð. Það er engin ein rétt leið.',
+      tips: [
+        {
+          id: 'f1',
+          title: 'Nýburar borða á 2–3 tíma fresti',
+          body: 'Maginn á nýbura er lítill — á stærð við valhnetu. Tíð fæðing er eðlileg og þýðir ekki að þú sért að gera eitthvað rangt.',
+        },
+        {
+          id: 'f2',
+          title: 'Þyngdaraukning — besta merki um velgengni',
+          body: 'Ef barnið þyngist vel og hefur blautar bleyjur reglulega, er fæðingin að ganga vel. Heilbrigð þyngdaraukning er um 150–200 grömm á viku hjá nýburum.',
+        },
+        {
+          id: 'f3',
+          title: 'Ef brjóstamjólk er lítil',
+          body: 'Hafðu samband við ljósmóður eða brjóstagjafar­ráðgjafa. Það eru til margar leiðir til að auka mjólkurframleiðslu — þú þarft ekki að glíma við þetta ein/n.',
+        },
+        {
+          id: 'f4',
+          title: 'Roping eftir máltíð',
+          body: 'Loftbólur geta valdið óþægindum og gráti. Láttu barnið ropa í 10–15 mínútur eftir hverja máltíð — haltu því uppréttu á öxlinni þinni.',
+        },
+        {
+          id: 'f5',
+          title: 'Upphafsmat (ca. 6 mánuðir)',
+          body: 'Byrjaðu einfalt: mjúkt grænmeti (gulrót, kúrbít, baunir), kornmeti og ávextir. Eitt nýtt matvæli í einu svo þú getir fylgst með viðbrögðum. Það má vera klúðurlegt — þannig læra börn.',
+        },
+      ],
+    },
+  },
+
+  selfCare: {
+    title: 'Sjálfsumhyggja',
+    intro: 'Þú getur ekki hellt úr tómu keri. Að hlúa að þér er hluti af því að hlúa að barninu þínu. Þú átt skilið góðar stundir líka.',
+    items: [
+      {
+        id: 'sc1',
+        title: 'Þú mátt biðja um hjálp',
+        body: 'Foreldrahlutverkið er ekki einhleypur leikur. Það þarf þorp til að ala upp barn. Biddu vin, fjölskyldumeðlim eða ábyrgan nágranna um aðstoð — og þegar þeir bjóðast fram, segjum já.',
+      },
+      {
+        id: 'sc2',
+        title: 'Smá hlé skipta máli',
+        body: '10 mínútur úti í loftinu, kaffibolla í friði, sturtubað — þessar litlu hlé hlaða rafmagn. Þú þarft ekki klukkustundar tíma til að endurnæra þig.',
+      },
+      {
+        id: 'sc3',
+        title: 'Svefn þegar barnið sefur',
+        body: 'Já, þú hefur heyrt þetta. Nei, húsið þarf ekki að vera þrifið. Svefnþraut á fyrstu vikunum er raunveruleg heilsuáhætta — veldu hvíld þegar val gefst.',
+      },
+      {
+        id: 'sc4',
+        title: 'Talaðu við einhvern',
+        body: 'Ef þér líður þunglynt, kvíðið eða yfirgnæft — talaðu við lækni þinn eða ljósmóður. Fæðingarþunglyndi og kvíði eru algeng og meðhöndlanleg. Að biðja um hjálp er styrkur.',
+      },
+      {
+        id: 'sc5',
+        title: 'Foreldrakennd er ekki alltaf yndi',
+        body: 'Það er allt í lagi að elska barnið sitt og vera samt þreytt, pirrað eða einmana. Þessar tilfinningar ganga saman. Þú ert manneskja.',
+      },
+      {
+        id: 'sc6',
+        title: 'Tengstu öðrum foreldrum',
+        body: 'Spjall við foreldra í sömu stöðu getur létt mikið. Leitaðu að foreldrahópum í hverfinu þínu eða á netinu — þú ert ekki ein/n í þessu.',
+      },
+    ],
+    ctaTitle: 'Þarftu að tala við einhvern?',
+    ctaBody: 'Heilsugæslan þín er til. Heilbrigðisstarfsmaður þinn vill hjálpa — þ.m.t. ef þér líður þunglynt eða kvíðið eftir fæðingu. Það kostar ekkert að hringja.',
+  },
+
+  diary: {
+    title: 'Dagbók',
+    subtitle: 'Skráðu grát, svefn og fæðingu. Gögn eru vistuð á tækinu þínu.',
+    dateLabel: 'Dagsetning og tími',
+    categoryLabel: 'Flokkur',
+    notesLabel: 'Athugasemdir (valkvæmt)',
+    notesPlaceholder: 'Hvernig gekk? Hvað tóktu eftir?',
+    addEntry: 'Bæta við færslu',
+    saved: 'Vistað!',
+    empty: 'Engar færslur ennþá. Byrjaðu að skrá hér að ofan.',
+    entriesTitle: 'Færslur',
+    deleteTooltip: 'Eyða færslu',
+    categories: {
+      gratur: 'Grátur',
+      svefn: 'Svefn',
+      faeding: 'Fæðing',
+      almennt: 'Almennt',
+    },
+  },
+
+  breathing: {
+    eyebrow: 'Öndun',
+    title: 'Anda.',
+    intro: 'Haltu hnappnum inni og fylgdu hringnum. 60 sekúndur róar taugakerfið mælanlega.',
+    whyTitle: 'Hvers vegna virkar þetta',
+    whyBody: 'Lengri útöndun en innöndun virkjar róandi hluta taugakerfisins — hið parasympatíska kerfi. Þetta er sama tækni og ljósmæður kenna í fæðingu.',
+    holdButton: 'Haltu inni',
+    holdInstruction: 'Haltu hnappnum inni',
+    timing: '4 sek inn · 4 sek halt · 6 sek út',
+    breatheIn: 'Andaðu inn',
+    hold: 'Haltu',
+    breatheOut: 'Andaðu út',
+    followCircle: 'Fylgdu hringnum…',
+    cyclesSingular: 'lota kláruð',
+    cyclesPlural: 'lotur kláraðar',
+    ariaLabel: 'Halda inni til að anda',
+  },
+
+  auth: {
+    signIn: 'Skrá inn',
+    signUp: 'Stofna aðgang',
+    signOut: 'Skrá út',
+    email: 'Netfang',
+    password: 'Lykilorð',
+    displayName: 'Nafnið þitt',
+    googleSignIn: 'Halda áfram með Google',
+    or: 'eða',
+    noAccount: 'Ertu ekki með aðgang?',
+    haveAccount: 'Ertu nú þegar með aðgang?',
+    signingIn: 'Skrái inn…',
+    error: 'Eitthvað fór úrskeiðis. Vinsamlegast reyndu aftur.',
+    gateTitle: 'Fylgstu með barninu',
+    gateBody: 'Skráðu þig inn til að skrá fæðingu, svefn, grát og vöxt — og sjá mynstur yfir tíma.',
+  },
+
+  babyProfile: {
+    title: 'Barnasnið',
+    addTitle: 'Bæta við barni',
+    editTitle: 'Breyta sniði',
+    nameLabel: 'Nafn',
+    namePlaceholder: 'Nafn barns',
+    dobLabel: 'Fæðingardagur',
+    save: 'Vista',
+    saving: 'Vista…',
+    delete: 'Fjarlægja barn',
+    deleteConfirm: 'Ertu viss? Öllum gögnum fyrir þetta barn verður eytt.',
+    noBabies: 'Engin börn skráð enn.',
+    addFirst: 'Bættu við fyrsta barninu til að byrja að skrá.',
+    addAnother: '+ Bæta við öðru barni',
+  },
+
+  tracker: {
+    title: 'Mælaborð',
+    tabs: {
+      feeding: 'Fæðing',
+      sleep: 'Svefn',
+      crying: 'Grátur',
+      growth: 'Vöxtur',
+      patterns: 'Mynstur',
+    },
+    noEntries: 'Engar færslur enn.',
+    entries: 'Færslur',
+    today: 'Í dag',
+    notes: 'Athugasemdir (valkvæmt)',
+    notesPlaceholder: 'Bæta við athugasemd…',
+    log: 'Skrá',
+    logging: 'Skrái…',
+    delete: 'Eyða',
+    time: 'Tími',
+
+    feeding: {
+      title: 'Skrá fæðingu',
+      breastLeft: 'Vinstra brjóst',
+      breastRight: 'Hægra brjóst',
+      bottle: 'Flaska',
+      solids: 'Fastur matur',
+      duration: 'Lengd (mín)',
+      amount: 'Magn (ml)',
+      todayTotal: 'fæðingar í dag',
+    },
+
+    sleep: {
+      title: 'Svefn',
+      start: 'Byrja svefn',
+      stop: 'Ljúka svefni',
+      sleeping: 'Sofandi…',
+      duration: 'Lengd (mín)',
+      manualEntry: 'Bæta við svefni',
+      startTime: 'Byrjunartími',
+      endTime: 'Lokatími',
+      totalToday: 'Heildarsvefn í dag',
+      hours: 'klst',
+      minutes: 'mín',
+    },
+
+    crying: {
+      title: 'Skrá grát',
+      duration: 'Lengd (mín)',
+      whatHelped: 'Hvað hjálpaði?',
+      helped: {
+        swaddle: 'Innpökkun',
+        whiteNoise: 'Hvítstyrkur',
+        walking: 'Ganga',
+        feeding: 'Fæðing',
+        diaper: 'Bleyjuskipti',
+        holding: 'Halda',
+        nothing: 'Ekkert',
+      },
+      otherLabel: 'Annað',
+      seeGuide: 'Sjá grátarleiðbeiningar →',
+    },
+
+    growth: {
+      title: 'Skrá mælingu',
+      date: 'Dagsetning',
+      weight: 'Þyngd (kg)',
+      length: 'Lengd (cm)',
+      measurements: 'Mælingar',
+    },
+
+    patterns: {
+      title: 'Mynstur',
+      periodToday: 'Í dag',
+      period7d: '7 dagar',
+      period30d: '30 dagar',
+      feedingChart: 'Fæðingar',
+      sleepChart: 'Svefn',
+      cryingChart: 'Grátur',
+      growthChart: 'Vöxtur',
+      noData: 'Ekki nóg af gögnum enn. Haltu áfram að skrá!',
+    },
+  },
+
+  account: {
+    title: 'Aðgangur',
+    signedInAs: 'Skráð/ur inn sem',
+    signOut: 'Skrá út',
+    deleteAccount: 'Eyða aðgangi',
+    deleteConfirm: 'Ertu viss? Þetta eyðir aðgangi þínum og öllum gögnum varanlega.',
+    deleting: 'Eyði…',
+  },
+
+  footer: {
+    description: 'Vísindalegar leiðbeiningar fyrir þreytta foreldra. Gert með kærleika á Íslandi.',
+    contentHeading: 'Efni',
+    disclaimer: 'Þessar leiðbeiningar koma ekki í stað ráðgjafar heilbrigðisstarfsmanns. Ef þig grunar að eitthvað sé að — hafðu samband við lækni eða ljósmóður.',
+    copyright: 'Gert með ♥ á Íslandi',
+  },
+};

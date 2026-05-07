@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --sage: #6B8F71;
+  --sage-deep: #4F6E55;
+  --sage-light: #E8F0E9;
+  --peach: #F2C4A0;
+  --peach-deep: #E89F6F;
+  --peach-light: #FDF3EB;
+  --cream: #FAF7F2;
+  --cream-2: #F1ECE2;
+  --brown: #5C4A3A;
+  --brown-light: #8A7060;
+  --brown-faint: #E5DDD0;
+  --amber-light: #FEF3E2;
+  --amber: #E8A44A;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--cream);
+  color: var(--brown);
+  font-weight: 400;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  color: var(--brown);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+#root { min-height: 100svh; display: flex; flex-direction: column; }
+
+::selection { background: var(--peach); color: var(--brown); }
+
+.fade-in { animation: fadeIn 0.3s ease forwards; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.accordion-body { overflow: hidden; transition: max-height 0.35s ease, opacity 0.3s ease; }
+.accordion-body.open { max-height: 600px; opacity: 1; }
+.accordion-body.closed { max-height: 0; opacity: 0; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--brown-faint); border-radius: 6px; }
