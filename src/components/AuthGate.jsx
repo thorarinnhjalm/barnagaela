@@ -46,22 +46,22 @@ function AuthCard() {
   };
 
   return (
-    <div style={{ maxWidth: 420, margin: '3rem auto', padding: '2.5rem 2rem', background: 'white', borderRadius: 20, border: '1px solid var(--sage-light)', textAlign: 'center' }}>
-      <h2 style={{ fontSize: '1.5rem', color: 'var(--brown)', marginBottom: 8 }}>{a.gateTitle}</h2>
-      <p style={{ color: 'var(--brown-light)', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: 16 }}>{a.gateBody}</p>
+    <div style={{ maxWidth: 420, margin: '1.5rem auto', padding: '2rem 1.75rem', background: 'white', borderRadius: 20, border: '1px solid var(--sage-light)', textAlign: 'center' }}>
+      <h2 style={{ fontSize: '1.4rem', color: 'var(--brown)', marginBottom: 6 }}>{a.gateTitle}</h2>
+      <p style={{ color: 'var(--brown-light)', fontSize: '0.88rem', lineHeight: 1.5, marginBottom: 14 }}>{a.gateBody}</p>
 
       {a.benefits && (
-        <div style={{ background: 'var(--cream-2, #F1ECE2)', borderRadius: 14, padding: '14px 18px', marginBottom: 24, textAlign: 'left' }}>
-          <div style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--brown)', marginBottom: 8 }}>{a.benefitsTitle}</div>
-          <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: 6 }}>
+        <div style={{ background: 'var(--cream-2, #F1ECE2)', borderRadius: 12, padding: '10px 14px', marginBottom: 18, textAlign: 'left' }}>
+          <div style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--brown)', marginBottom: 5 }}>{a.benefitsTitle}</div>
+          <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: 3 }}>
             {a.benefits.map((b, i) => (
-              <li key={i} style={{ fontSize: '0.85rem', color: 'var(--brown-light)', lineHeight: 1.5, display: 'flex', alignItems: 'flex-start', gap: 8 }}>
+              <li key={i} style={{ fontSize: '0.82rem', color: 'var(--brown-light)', lineHeight: 1.4, display: 'flex', alignItems: 'flex-start', gap: 6 }}>
                 <span style={{ color: 'var(--sage)', fontWeight: 700, flexShrink: 0 }}>✓</span>
                 {b}
               </li>
             ))}
           </ul>
-          <p style={{ fontSize: '0.78rem', color: 'var(--brown-light)', marginTop: 10, marginBottom: 0, fontStyle: 'italic' }}>{a.freeNote}</p>
+          <p style={{ fontSize: '0.75rem', color: 'var(--brown-light)', marginTop: 6, marginBottom: 0, fontStyle: 'italic' }}>{a.freeNote}</p>
         </div>
       )}
 
