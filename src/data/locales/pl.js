@@ -248,6 +248,14 @@ export default {
     error: 'Coś poszło nie tak. Spróbuj ponownie.',
     gateTitle: 'Śledź dziecko',
     gateBody: 'Zaloguj się, aby rejestrować karmienie, sen, płacz i wzrost — i widzieć wzorce w czasie.',
+    benefits: [
+      'Rejestruj karmienie, sen, płacz i wzrost',
+      'Obserwuj wzorce i trendy w czasie',
+      'Synchronizuj dziennik z chmurą',
+      'Śledź więcej niż jedno dziecko',
+    ],
+    benefitsTitle: 'Dlaczego warto założyć konto?',
+    freeNote: 'Poradnik jest zawsze bezpłatny — nie potrzebujesz konta, żeby go czytać.',
   },
 
   babyProfile: {

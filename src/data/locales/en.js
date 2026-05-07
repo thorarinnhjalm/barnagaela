@@ -256,6 +256,14 @@ export default {
     error: 'Something went wrong. Please try again.',
     gateTitle: 'Track your baby',
     gateBody: 'Sign in to log feedings, sleep, crying, and growth — and see patterns over time.',
+    benefits: [
+      'Log feedings, sleep, crying, and growth',
+      'See patterns and trends over time',
+      'Sync your diary to the cloud',
+      'Track multiple children',
+    ],
+    benefitsTitle: 'Why create an account?',
+    freeNote: 'The guide is always free — no account needed to read it.',
   },
 
   // Baby profile

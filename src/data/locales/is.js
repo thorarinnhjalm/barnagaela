@@ -248,6 +248,14 @@ export default {
     error: 'Eitthvað fór úrskeiðis. Vinsamlegast reyndu aftur.',
     gateTitle: 'Fylgstu með barninu',
     gateBody: 'Skráðu þig inn til að skrá fæðingu, svefn, grát og vöxt — og sjá mynstur yfir tíma.',
+    benefits: [
+      'Skráðu fæðingu, svefn, grát og vöxt',
+      'Sjáðu mynstur og þróun yfir tíma',
+      'Samstilltu dagbókina í skýið',
+      'Fylgstu með fleiri en einu barni',
+    ],
+    benefitsTitle: 'Af hverju að stofna aðgang?',
+    freeNote: 'Leiðbeiningarnar eru alltaf fríar — enginn aðgangur þarf til að lesa þær.',
   },
 
   babyProfile: {
