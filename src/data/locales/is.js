@@ -10,7 +10,7 @@ export default {
   landing: {
     badge: 'Frítt · Engin skráning',
     headline: 'Hjálp fyrir þreytta foreldra',
-    subheadline: 'Vísindalegar leiðbeiningar um grát, svefn og fæðingu barna 0–24 mánaða.',
+    subheadline: 'Leiðbeiningar um grát, svefn og fæðingu barna 0–24 mánaða.',
     cta: 'Opna leiðbeiningar',
     pillarsTitle: 'Þrjú meginsvið',
     pillarsSubtitle: 'Allt sem foreldrar 0–24 mánaða barna spyrja um mest.',

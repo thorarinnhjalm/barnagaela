@@ -26,9 +26,14 @@ function AuthCard() {
   const handleGoogle = async () => {
     setBusy(true);
     setError('');
-    try { await signInWithGoogle(); }
-    catch { setError(a.error); }
-    finally { setBusy(false); }
+    try { 
+      await signInWithGoogle(); 
+    } catch (err) { 
+      console.error("Google Auth Error:", err);
+      setError(a.error); 
+    } finally { 
+      setBusy(false); 
+    }
   };
 
   const handleSubmit = async (e) => {
