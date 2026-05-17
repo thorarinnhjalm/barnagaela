@@ -26,6 +26,7 @@
   --accent-secondary: #7e9286;
   --sand: #e4e2df;
   --espresso-faint: rgba(27, 28, 26, 0.05);
+  --nav-bg: rgba(251, 249, 246, 0.92);
 
   /* Utilities */
   --radius-sm: 8px;
@@ -45,6 +46,7 @@ html.dark {
   --accent-secondary: #b8cbbd;
   --sand: #393431;
   --espresso-faint: rgba(0, 0, 0, 0.4);
+  --nav-bg: rgba(22, 19, 17, 0.92);
   
   --sage: #a7baac;
   --sage-deep: #1f1b18;
@@ -70,6 +72,7 @@ html.dark {
     --accent-secondary: #b8cbbd;
     --sand: #393431;
     --espresso-faint: rgba(0, 0, 0, 0.4);
+    --nav-bg: rgba(22, 19, 17, 0.92);
     
     --sage: #a7baac;
     --sage-deep: #1f1b18;

@@ -21,14 +21,14 @@ export default function Nav() {
 
   return (
     <nav style={{
-      background: 'var(--cream)', borderBottom: '1px solid var(--sage-light)',
+      background: 'var(--nav-bg)', borderBottom: '1px solid var(--sage-light)',
       padding: '0 1.5rem', position: 'sticky', top: 0, zIndex: 50,
-      backdropFilter: 'blur(8px)', backgroundColor: 'rgba(251, 249, 246, 0.92)',
+      backdropFilter: 'blur(8px)', transition: 'background-color 0.4s ease'
     }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
           <span style={{ width: '32px', height: '32px', background: 'var(--sage)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <Cloud size={16} color="white" fill="white" />
+            <Cloud size={16} color="var(--bg-primary)" fill="var(--bg-primary)" />
           </span>
           <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: '700', fontSize: '1.15rem', color: 'var(--brown)' }}>Lúlla</span>
         </Link>
