@@ -1,79 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @import "tailwindcss";
 
 :root {
-  /* Original Palette */
-  --sage: #6B8F71;
-  --sage-deep: #4F6E55;
-  --sage-light: #E8F0E9;
-  --peach: #F2C4A0;
-  --peach-deep: #E89F6F;
-  --peach-light: #FDF3EB;
-  --cream: #FAF7F2;
-  --cream-2: #F1ECE2;
-  --brown: #5C4A3A;
-  --brown-light: #8A7060;
-  --brown-faint: #E5DDD0;
-  --amber-light: #FEF3E2;
-  --amber: #E8A44A;
+  /* Lulla Design System - Light Theme */
+  --sage: #7e9286;
+  --sage-deep: #0d1f17;
+  --sage-light: #d2e8da;
+  --peach: #fdaf8b;
+  --peach-deep: #8b4f32;
+  --peach-light: #ffdbcc;
+  --cream: #fbf9f6;
+  --cream-2: #efeeeb;
+  --brown: #1b1c1a;
+  --brown-light: #4e4542;
+  --brown-faint: #d1c4bf;
+  --amber-light: #ffdbcc;
+  --amber: #fdaf8b;
 
-  /* Premium Design System - Light Theme (Default) */
-  --bg-primary: #FAF7F2;
-  --bg-secondary: #FFFFFF;
-  --text-primary: #3B3029;
-  --text-secondary: #75675F;
-  --accent-primary: #E89F6F;
-  --accent-secondary: #6B8F71;
-  --sand: #EBE5DB;
-  --espresso-faint: rgba(92, 74, 58, 0.08);
+  --bg-primary: #fbf9f6;
+  --bg-secondary: #ffffff;
+  --text-primary: #1b1c1a;
+  --text-secondary: #4e4542;
+  --accent-primary: #8b4f32;
+  --accent-secondary: #7e9286;
+  --sand: #e4e2df;
+  --espresso-faint: rgba(27, 28, 26, 0.05);
 
   /* Utilities */
   --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
 }
 
-/* Dark Theme overrides */
+/* Lúlla Night Mode */
 html.dark :root, 
 html.dark {
-  --bg-primary: #1C1A19;
-  --bg-secondary: #242120;
-  --text-primary: #F0EBE6;
-  --text-secondary: #A09893;
-  --accent-primary: #F2C4A0;
-  --accent-secondary: #89A98E;
-  --sand: #363230;
+  --bg-primary: #161311;
+  --bg-secondary: #26211e;
+  --text-primary: #eae1dd;
+  --text-secondary: #d8c2ba;
+  --accent-primary: #d98c6d;
+  --accent-secondary: #b8cbbd;
+  --sand: #393431;
   --espresso-faint: rgba(0, 0, 0, 0.4);
   
-  /* Adjust specific original colors for better contrast in dark mode */
-  --sage-light: #2D3A30;
-  --peach-light: #3D2D22;
-  --cream: #1C1A19;
-  --brown: #F0EBE6;
-  --brown-light: #A09893;
-  --brown-faint: #363230;
+  --sage: #a7baac;
+  --sage-deep: #1f1b18;
+  --sage-light: #394b40;
+  --peach: #d98c6d;
+  --peach-deep: #8d4d33;
+  --peach-light: #ffb598;
+  --cream: #161311;
+  --cream-2: #231f1d;
+  --brown: #eae1dd;
+  --brown-light: #d8c2ba;
+  --brown-faint: #393431;
 }
 
 @media (prefers-color-scheme: dark) {
   html:not(.light) :root,
   html:not(.light) {
-    --bg-primary: #1C1A19;
-    --bg-secondary: #242120;
-    --text-primary: #F0EBE6;
-    --text-secondary: #A09893;
-    --accent-primary: #F2C4A0;
-    --accent-secondary: #89A98E;
-    --sand: #363230;
+    --bg-primary: #161311;
+    --bg-secondary: #26211e;
+    --text-primary: #eae1dd;
+    --text-secondary: #d8c2ba;
+    --accent-primary: #d98c6d;
+    --accent-secondary: #b8cbbd;
+    --sand: #393431;
     --espresso-faint: rgba(0, 0, 0, 0.4);
     
-    --sage-light: #2D3A30;
-    --peach-light: #3D2D22;
-    --cream: #1C1A19;
-    --brown: #F0EBE6;
-    --brown-light: #A09893;
-    --brown-faint: #363230;
+    --sage: #a7baac;
+    --sage-deep: #1f1b18;
+    --sage-light: #394b40;
+    --peach: #d98c6d;
+    --peach-deep: #8d4d33;
+    --peach-light: #ffb598;
+    --cream: #161311;
+    --cream-2: #231f1d;
+    --brown: #eae1dd;
+    --brown-light: #d8c2ba;
+    --brown-faint: #393431;
   }
 }
 
@@ -82,21 +90,21 @@ html.dark {
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-weight: 400;
-  line-height: 1.65;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'DM Serif Display', serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.15;
-  letter-spacing: -0.01em;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   transition: color 0.4s ease;
 }
 

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Heart } from 'lucide-react';
+import { Cloud } from 'lucide-react';
 import { useI18n } from '../data/i18n';
 
 export default function Footer() {
@@ -15,20 +15,20 @@ export default function Footer() {
   ];
 
   return (
-    <footer style={{ background: 'var(--brown)', color: 'rgba(255,255,255,0.7)', padding: '3rem 1.5rem', marginTop: 'auto' }}>
+    <footer style={{ background: 'var(--brown)', color: 'rgba(255,255,255,0.7)', padding: '3rem 1.5rem', marginTop: 'auto', fontFamily: "'Inter', sans-serif" }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2.5rem' }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
             <span style={{ width: '28px', height: '28px', background: 'var(--sage)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Heart size={13} color="white" fill="white" />
+              <Cloud size={13} color="white" fill="white" />
             </span>
-            <span style={{ fontFamily: "'DM Serif Display', serif", fontSize: '1.05rem', color: 'white' }}>Barnaglaður</span>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: '700', fontSize: '1.05rem', color: 'white' }}>Lúlla</span>
           </div>
           <p style={{ fontSize: '0.88rem', lineHeight: 1.65, maxWidth: '240px' }}>{f.description}</p>
         </div>
 
         <div>
-          <h4 style={{ color: 'white', fontSize: '0.85rem', fontFamily: "'DM Sans', sans-serif", fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>{f.contentHeading}</h4>
+          <h4 style={{ color: 'white', fontSize: '0.85rem', fontFamily: "'Inter', sans-serif", fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.75rem' }}>{f.contentHeading}</h4>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
             {links.map(({ to, label }) => (
               <li key={to}>
@@ -47,7 +47,7 @@ export default function Footer() {
       </div>
 
       <div style={{ maxWidth: '1100px', margin: '2rem auto 0', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', fontSize: '0.82rem', textAlign: 'center' }}>
-        © {new Date().getFullYear()} Barnaglaður · {f.copyright}
+        © {new Date().getFullYear()} Lúlla · {f.copyright}
       </div>
     </footer>
   );
