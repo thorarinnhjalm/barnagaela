@@ -9,7 +9,7 @@ export default {
 
   landing: {
     badge: 'Bezpłatnie · Bez rejestracji',
-    headline: 'Pomoc dla zmęczonych rodziców',
+    headline: 'Niezawodne wsparcie dla zmęczonych rodziców',
     subheadline: 'Wskazówki oparte na badaniach naukowych dotyczące płaczu, snu i karmienia dzieci w wieku 0–24 miesięcy.',
     cta: 'Otwórz poradnik',
     pillarsTitle: 'Trzy główne tematy',
@@ -83,9 +83,9 @@ export default {
           'Połóż dziecko w łóżeczku — na plecach, na płaskiej powierzchni',
           'Wyjdź do innego pokoju',
           'Weź 10 głębokich oddechów',
-          'Zadzwoń do kogoś, komu ufasz',
+          'Zadzwoń do kogoś, komu ufasz lub pod numer 1700 (Infolinia Medyczna) / 112 (Numer Alarmowy)',
         ],
-        note: 'Nie ma wstydu w potrzebowaniu pomocy. To jest trudne.',
+        note: 'Nie ma wstydu w potrzebowaniu pomocy. Infolinia Medyczna to 1700 (całodobowo), a na Heilsuvera uzyskasz profesjonalną poradę. To jest trudne.',
       },
     },
 
@@ -178,7 +178,7 @@ export default {
       {
         id: 'sc4',
         title: 'Porozmawiaj z kimś',
-        body: 'Jeśli czujesz się przygnębiona/y, niespokojnie lub przytłoczona/y — porozmawiaj z lekarzem lub położną. Depresja i lęk poporodowy są częste i leczone. Proszenie o pomoc to siła.',
+        body: 'Jeśli czujesz się przygnębiona/y, niespokojnie lub przytłoczona/y — porozmawiaj z lekarzem lub położną. Infolinia Medyczna (1700) jest czynna całą dobę. Proszenie o pomoc to siła.',
       },
       {
         id: 'sc5',
@@ -192,7 +192,7 @@ export default {
       },
     ],
     ctaTitle: 'Potrzebujesz z kimś porozmawiać?',
-    ctaBody: 'Twoja przychodnia jest do dyspozycji. Pracownik medyczny chce pomóc — także jeśli czujesz się przygnębiona/y lub niespokojnie po porodzie. Rozmowa nic nie kosztuje.',
+    ctaBody: 'Twoja przychodnia jest do dyspozycji. Infolinia Medyczna to 1700 (czynna całą dobę). Możesz również wysłać zapytanie przez Heilsuvera w dowolnym momencie. W nagłych wypadkach dzwoń pod 112.',
   },
 
   diary: {

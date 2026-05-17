@@ -11,7 +11,7 @@ export default {
   // Landing
   landing: {
     badge: 'Free · No sign-up',
-    headline: 'Help for tired parents',
+    headline: 'Trusted support for tired parents',
     subheadline: 'Evidence-based guidance on crying, sleep, and feeding for children aged 0–24 months.',
     cta: 'Open guide',
     pillarsTitle: 'Three core topics',
@@ -87,9 +87,9 @@ export default {
           'Put the baby down in the crib — on their back, on a flat surface',
           'Go to another room',
           'Take 10 deep breaths',
-          'Call someone you trust',
+          'Call someone you trust or 1700 (Medical Helpline) / 112 (Emergency)',
         ],
-        note: "There is never any shame in needing help. This is hard.",
+        note: "There is never any shame in needing help. The Medical Helpline is 1700 (24/7) and you can get professional advice on Heilsuvera. This is hard.",
       },
     },
 
@@ -183,7 +183,7 @@ export default {
       {
         id: 'sc4',
         title: 'Talk to someone',
-        body: 'If you feel depressed, anxious, or overwhelmed — talk to your doctor or midwife. Postpartum depression and anxiety are common and treatable. Asking for help is strength.',
+        body: 'If you feel depressed, anxious, or overwhelmed — talk to your doctor or midwife. The Medical Helpline (1700) is open 24/7. Asking for help is strength.',
       },
       {
         id: 'sc5',
@@ -197,7 +197,7 @@ export default {
       },
     ],
     ctaTitle: 'Need to talk to someone?',
-    ctaBody: "Your healthcare provider is there for you. Your health professional wants to help — including if you feel depressed or anxious after giving birth. It costs nothing to call.",
+    ctaBody: "Your healthcare provider is there for you. The Medical Helpline is 1700 (open 24/7). You can also send an inquiry on Heilsuvera anytime. In an emergency, call 112.",
   },
 
   // Diary
