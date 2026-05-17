@@ -17,6 +17,7 @@ import GrowthTracker from './pages/GrowthTracker';
 import PatternsView from './pages/PatternsView';
 import BabyProfile from './pages/BabyProfile';
 import AccountPage from './pages/AccountPage';
+import Terms from './pages/Terms';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Nav />
           <Routes>
             <Route path="/" element={<Landing />} />
+            <Route path="/skilmalar" element={<Terms />} />
             <Route path="/app" element={<AppShell />}>
               <Route index element={<Navigate to="/app/gratur" replace />} />
               <Route path="gratur"   element={<Crying />} />

@@ -10,7 +10,7 @@ export default {
   landing: {
     badge: 'Frítt · Engin skráning',
     headline: 'Hjálp fyrir þreytta foreldra',
-    subheadline: 'Leiðbeiningar um grát, svefn og fæðingu barna 0–24 mánaða.',
+    subheadline: 'Leiðbeiningar um grát, svefn og næringu barna 0–24 mánaða.',
     cta: 'Opna leiðbeiningar',
     pillarsTitle: 'Þrjú meginsvið',
     pillarsSubtitle: 'Allt sem foreldrar 0–24 mánaða barna spyrja um mest.',
@@ -19,7 +19,7 @@ export default {
     pillarFeeding: 'Brjóstamjólk, flaska og upphafsmat.',
     featuresTitle: 'Hvað er í boði',
     featureDiaryTitle: 'Dagbók',
-    featureDiaryDesc: 'Skráðu grát, svefn og fæðingu. Sjáðu mynstur yfir tíma.',
+    featureDiaryDesc: 'Skráðu grát, svefn og næringu. Sjáðu mynstur yfir tíma.',
     featureEmergencyTitle: 'Neyðaráætlun',
     featureEmergencyDesc: 'Þegar þú ert yfirgnæfð/ur — skref-fyrir-skref leiðbeiningar.',
     featureExpertTitle: 'Sérfræðiráð',
@@ -27,7 +27,7 @@ export default {
     featureSelfCareTitle: 'Sjálfsumhyggja',
     featureSelfCareDesc: 'Leiðbeiningar um að hlúa að þér meðan þú hlúir að barninu.',
     reassuranceTitle: '„Þú ert ekki ein/n.\nÞetta er erfitt."',
-    reassuranceBody: 'Öll börn gráta. Enginn sefur nóg. Fæðing er erfiðari en við búumst við. Þessar leiðbeiningar eru hér til að hjálpa — ekki dæma.',
+    reassuranceBody: 'Öll börn gráta. Enginn sefur nóg. Næring er oft erfiðari en við búumst við. Þessar leiðbeiningar eru hér til að hjálpa — ekki dæma.',
     ctaBottomTitle: 'Byrjaðu núna — frítt',
     ctaBottomSubtitle: 'Engin skráning. Engin greiðsla. Alltaf aðgengilegt.',
     ctaBottomButton: 'Opna leiðbeiningar →',
@@ -37,7 +37,7 @@ export default {
     heading: 'Leiðbeiningar',
     crying: 'Grátur',
     sleep: 'Svefn',
-    feeding: 'Fæðing',
+    feeding: 'Næring',
     breathing: 'Anda',
     diary: 'Dagbók',
     selfCare: 'Sjálfsumhyggja',
@@ -123,19 +123,19 @@ export default {
     },
 
     faeding: {
-      label: 'Fæðing',
+      label: 'Næring',
       description: 'Brjóstamjólk, flaska og upphafsmat',
       intro: 'Hvort sem þú gefur brjóst eða flösku — þú ert að gera það rétta. Mikilvægast er að barnið fái næringu og nálægð. Það er engin ein rétt leið.',
       tips: [
         {
           id: 'f1',
           title: 'Nýburar borða á 2–3 tíma fresti',
-          body: 'Maginn á nýbura er lítill — á stærð við valhnetu. Tíð fæðing er eðlileg og þýðir ekki að þú sért að gera eitthvað rangt.',
+          body: 'Maginn á nýbura er lítill — á stærð við valhnetu. Tíð næring er eðlileg og þýðir ekki að þú sért að gera eitthvað rangt.',
         },
         {
           id: 'f2',
           title: 'Þyngdaraukning — besta merki um velgengni',
-          body: 'Ef barnið þyngist vel og hefur blautar bleyjur reglulega, er fæðingin að ganga vel. Heilbrigð þyngdaraukning er um 150–200 grömm á viku hjá nýburum.',
+          body: 'Ef barnið þyngist vel og hefur blautar bleyjur reglulega, er næringin að ganga vel. Heilbrigð þyngdaraukning er um 150–200 grömm á viku hjá nýburum.',
         },
         {
           id: 'f3',
@@ -197,7 +197,7 @@ export default {
 
   diary: {
     title: 'Dagbók',
-    subtitle: 'Skráðu grát, svefn og fæðingu. Gögn eru vistuð á tækinu þínu.',
+    subtitle: 'Skráðu grát, svefn og næringu. Gögn eru vistuð á tækinu þínu.',
     dateLabel: 'Dagsetning og tími',
     categoryLabel: 'Flokkur',
     notesLabel: 'Athugasemdir (valkvæmt)',
@@ -210,7 +210,7 @@ export default {
     categories: {
       gratur: 'Grátur',
       svefn: 'Svefn',
-      faeding: 'Fæðing',
+      faeding: 'Næring',
       almennt: 'Almennt',
     },
   },
@@ -247,9 +247,9 @@ export default {
     signingIn: 'Skrái inn…',
     error: 'Eitthvað fór úrskeiðis. Vinsamlegast reyndu aftur.',
     gateTitle: 'Fylgstu með barninu',
-    gateBody: 'Skráðu þig inn til að skrá fæðingu, svefn, grát og vöxt — og sjá mynstur yfir tíma.',
+    gateBody: 'Skráðu þig inn til að skrá næringu, svefn, grát og vöxt — og sjá mynstur yfir tíma.',
     benefits: [
-      'Skráðu fæðingu, svefn, grát og vöxt',
+      'Skráðu næringu, svefn, grát og vöxt',
       'Sjáðu mynstur og þróun yfir tíma',
       'Samstilltu dagbókina í skýið',
       'Fylgstu með fleiri en einu barni',
@@ -285,7 +285,7 @@ export default {
   tracker: {
     title: 'Mælaborð',
     tabs: {
-      feeding: 'Fæðing',
+      feeding: 'Næring',
       sleep: 'Svefn',
       crying: 'Grátur',
       growth: 'Vöxtur',
@@ -302,14 +302,14 @@ export default {
     time: 'Tími',
 
     feeding: {
-      title: 'Skrá fæðingu',
+      title: 'Skrá næringu',
       breastLeft: 'Vinstra brjóst',
       breastRight: 'Hægra brjóst',
       bottle: 'Flaska',
       solids: 'Fastur matur',
       duration: 'Lengd (mín)',
       amount: 'Magn (ml)',
-      todayTotal: 'fæðingar í dag',
+      todayTotal: 'gjafir í dag',
     },
 
     sleep: {
@@ -334,7 +334,7 @@ export default {
         swaddle: 'Innpökkun',
         whiteNoise: 'Hvítstyrkur',
         walking: 'Ganga',
-        feeding: 'Fæðing',
+        feeding: 'Næring',
         diaper: 'Bleyjuskipti',
         holding: 'Halda',
         nothing: 'Ekkert',
@@ -356,7 +356,7 @@ export default {
       periodToday: 'Í dag',
       period7d: '7 dagar',
       period30d: '30 dagar',
-      feedingChart: 'Fæðingar',
+      feedingChart: 'Næring',
       sleepChart: 'Svefn',
       cryingChart: 'Grátur',
       growthChart: 'Vöxtur',

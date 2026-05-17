@@ -85,7 +85,7 @@ export const topics = {
 
   faeding: {
     id: 'faeding',
-    label: 'Fæðing',
+    label: 'Næring',
     icon: 'Leaf',
     color: 'peach',
     path: '/app/faeding',
@@ -95,12 +95,12 @@ export const topics = {
       {
         id: 'f1',
         title: 'Nýburar borða á 2–3 tíma fresti',
-        body: 'Maginn á nýbura er lítill — á stærð við valhnetu. Tíð fæðing er eðlileg og þýðir ekki að þú sért að gera eitthvað rangt.',
+        body: 'Maginn á nýbura er lítill — á stærð við valhnetu. Tíð næring er eðlileg og þýðir ekki að þú sért að gera eitthvað rangt.',
       },
       {
         id: 'f2',
         title: 'Þyngdaraukning — besta merki um velgengni',
-        body: 'Ef barnið þyngist vel og hefur blautar bleyjur reglulega, er fæðingin að ganga vel. Heilbrigð þyngdaraukning er um 150–200 grömm á viku hjá nýburum.',
+        body: 'Ef barnið þyngist vel og hefur blautar bleyjur reglulega, er næringin að ganga vel. Heilbrigð þyngdaraukning er um 150–200 grömm á viku hjá nýburum.',
       },
       {
         id: 'f3',

@@ -1,8 +1,9 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Cloud, User, LogOut } from 'lucide-react';
+import { Cloud, User, LogOut, Moon, Sun, Monitor } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 import { useI18n } from '../data/i18n';
 import { useAuth, signOut } from '../data/AuthContext';
+import { useTheme } from '../data/ThemeContext';
 
 const LANG_FLAGS = { is: 'IS', en: 'EN', pl: 'PL' };
 
@@ -10,6 +11,7 @@ export default function Nav() {
   const { pathname } = useLocation();
   const { t, lang, setLang, locales } = useI18n();
   const { user, loading } = useAuth();
+  const { theme, toggleTheme } = useTheme();
   const isApp = pathname.startsWith('/app');
 
   function cycleLang() {
@@ -32,6 +34,18 @@ export default function Nav() {
         </Link>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <button onClick={toggleTheme} style={{
+            background: 'var(--cream-2, #efeeeb)', border: '1px solid var(--brown-faint, #d1c4bf)',
+            borderRadius: '8px', padding: '0.35rem 0.6rem', cursor: 'pointer',
+            color: 'var(--brown)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            transition: 'background 0.15s'
+          }}
+            onMouseEnter={e => (e.currentTarget.style.background = 'var(--sage-light)')}
+            onMouseLeave={e => (e.currentTarget.style.background = 'var(--cream-2, #efeeeb)')}
+            title="Skema / Theme"
+          >
+            {theme === 'dark' ? <Moon size={15} /> : theme === 'light' ? <Sun size={15} /> : <Monitor size={15} />}
+          </button>
           <button onClick={cycleLang} style={{
             background: 'var(--cream-2, #F1ECE2)', border: '1px solid var(--brown-faint, #E5DDD0)',
             borderRadius: '8px', padding: '0.35rem 0.6rem', cursor: 'pointer',

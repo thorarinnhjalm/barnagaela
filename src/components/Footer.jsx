@@ -46,8 +46,13 @@ export default function Footer() {
         </div>
       </div>
 
-      <div style={{ maxWidth: '1100px', margin: '2rem auto 0', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', fontSize: '0.82rem', textAlign: 'center' }}>
-        © {new Date().getFullYear()} Lúlla · {f.copyright}
+      <div style={{ maxWidth: '1100px', margin: '2rem auto 0', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', fontSize: '0.82rem', textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+        <div>© {new Date().getFullYear()} Lúlla · {f.copyright}</div>
+        <div>
+          <Link to="/skilmalar" style={{ color: 'rgba(255,255,255,0.65)', textDecoration: 'underline' }}>
+            Notkunarskilmálar & Persónuvernd
+          </Link>
+        </div>
       </div>
     </footer>
   );
