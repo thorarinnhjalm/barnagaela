@@ -36,9 +36,29 @@
 }
 
 /* Dark Theme overrides */
-html.dark, 
-html:not(.light) @media (prefers-color-scheme: dark) {
-  :root, html {
+html.dark :root, 
+html.dark {
+  --bg-primary: #1C1A19;
+  --bg-secondary: #242120;
+  --text-primary: #F0EBE6;
+  --text-secondary: #A09893;
+  --accent-primary: #F2C4A0;
+  --accent-secondary: #89A98E;
+  --sand: #363230;
+  --espresso-faint: rgba(0, 0, 0, 0.4);
+  
+  /* Adjust specific original colors for better contrast in dark mode */
+  --sage-light: #2D3A30;
+  --peach-light: #3D2D22;
+  --cream: #1C1A19;
+  --brown: #F0EBE6;
+  --brown-light: #A09893;
+  --brown-faint: #363230;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.light) :root,
+  html:not(.light) {
     --bg-primary: #1C1A19;
     --bg-secondary: #242120;
     --text-primary: #F0EBE6;
@@ -48,7 +68,6 @@ html:not(.light) @media (prefers-color-scheme: dark) {
     --sand: #363230;
     --espresso-faint: rgba(0, 0, 0, 0.4);
     
-    /* Adjust specific original colors for better contrast in dark mode */
     --sage-light: #2D3A30;
     --peach-light: #3D2D22;
     --cream: #1C1A19;
