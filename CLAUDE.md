@@ -62,7 +62,7 @@ Three hooks in `src/data/useTrackerData.js`:
 
 ### Theme
 
-`ThemeProvider` / `useTheme()` from `src/data/ThemeContext.jsx`. Three modes: `auto`, `light`, `dark`. Stored in `localStorage` under key `barnaglaedur-theme`. Theme is applied as classes on `document.documentElement`; colors use CSS custom properties (`--accent-primary`, `--bg-secondary`, etc.) defined in `src/index.css`.
+`ThemeProvider` / `useTheme()` from `src/data/ThemeContext.jsx`. Three modes: `auto`, `light`, `dark`. Stored in `localStorage` under key `lulla-theme`. Theme is applied as classes on `document.documentElement`; colors use CSS custom properties (`--accent-primary`, `--bg-secondary`, etc.) defined in `src/index.css`.
 
 ### Static Content
 
