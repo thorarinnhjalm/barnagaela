@@ -18,7 +18,7 @@ export default function SelfCare() {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.25rem' }}>
         {sc.items.map(item => (
-          <div key={item.id} style={{ background: 'white', borderRadius: '16px', padding: '1.5rem 1.75rem', border: '1px solid var(--sage-light)', transition: 'box-shadow 0.2s' }}
+          <div key={item.id} style={{ background: 'var(--bg-secondary)', borderRadius: '16px', padding: '1.5rem 1.75rem', border: '1px solid var(--sage-light)', transition: 'box-shadow 0.2s' }}
             onMouseEnter={e => (e.currentTarget.style.boxShadow = '0 4px 20px rgba(92,74,58,0.08)')}
             onMouseLeave={e => (e.currentTarget.style.boxShadow = 'none')}
           >

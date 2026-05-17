@@ -107,7 +107,7 @@ export default function Diary() {
       <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '0.5rem', color: 'var(--brown)' }}>{d.title}</h1>
       <p style={{ color: 'var(--brown-light)', marginBottom: '2rem', fontSize: '0.95rem' }}>{subtitle}</p>
 
-      <form onSubmit={handleSubmit} style={{ background: 'white', borderRadius: '16px', padding: '1.75rem', border: '1px solid var(--sage-light)', marginBottom: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <form onSubmit={handleSubmit} style={{ background: 'var(--bg-secondary)', borderRadius: '16px', padding: '1.75rem', border: '1px solid var(--sage-light)', marginBottom: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
           <div>
             <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 500, color: 'var(--brown-light)', marginBottom: '0.35rem', fontFamily: "'DM Sans', sans-serif" }}>{d.dateLabel}</label>
@@ -124,7 +124,7 @@ export default function Diary() {
           <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 500, color: 'var(--brown-light)', marginBottom: '0.35rem', fontFamily: "'DM Sans', sans-serif" }}>{d.notesLabel}</label>
           <textarea value={form.text} onChange={e => setForm(f => ({ ...f, text: e.target.value }))} placeholder={d.notesPlaceholder} rows={3} style={{ ...inputStyle, resize: 'vertical', minHeight: '80px' }} />
         </div>
-        <button type="submit" style={{ background: 'var(--sage)', color: 'white', border: 'none', borderRadius: '10px', padding: '0.75rem 1.5rem', fontSize: '0.93rem', fontWeight: 500, fontFamily: "'DM Sans', sans-serif", cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', alignSelf: 'flex-start', transition: 'opacity 0.2s' }}
+        <button type="submit" style={{ background: 'var(--sage)', color: 'var(--btn-text)', border: 'none', borderRadius: '10px', padding: '0.75rem 1.5rem', fontSize: '0.93rem', fontWeight: 500, fontFamily: "'DM Sans', sans-serif", cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', alignSelf: 'flex-start', transition: 'opacity 0.2s' }}
           onMouseEnter={e => (e.currentTarget.style.opacity = '0.88')}
           onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
         >

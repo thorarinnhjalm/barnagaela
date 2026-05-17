@@ -95,7 +95,7 @@ function UserButton({ user, t }) {
     return (
       <button onClick={() => navigate('/app/maelar')} style={{
         display: 'flex', alignItems: 'center', gap: 6, padding: '0.4rem 0.9rem',
-        borderRadius: 999, border: '1px solid var(--sage-light)', background: 'white',
+        borderRadius: 999, border: '1px solid var(--sage-light)', background: 'var(--bg-secondary)',
         cursor: 'pointer', fontSize: '0.85rem', fontWeight: 500, color: 'var(--brown)',
         fontFamily: "'Inter', sans-serif", transition: 'box-shadow 0.15s',
       }}
@@ -124,7 +124,7 @@ function UserButton({ user, t }) {
       {open && (
         <div style={{
           position: 'absolute', right: 0, top: '100%', marginTop: 6,
-          background: 'white', borderRadius: 14, border: '1px solid var(--sage-light)',
+          background: 'var(--bg-secondary)', borderRadius: 14, border: '1px solid var(--sage-light)',
           boxShadow: '0 8px 24px rgba(92,74,58,0.1)', minWidth: 200, overflow: 'hidden', zIndex: 100,
         }}>
           <div style={{ padding: '12px 16px', borderBottom: '1px solid var(--sage-light)' }}>

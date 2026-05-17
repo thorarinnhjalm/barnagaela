@@ -38,7 +38,7 @@ function BabyProfileInner() {
       )}
 
       {babies.map(b => (
-        <div key={b.id} style={{ background: 'white', borderRadius: 16, padding: '1.2rem 1.5rem', border: '1px solid var(--sage-light)', marginBottom: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div key={b.id} style={{ background: 'var(--bg-secondary)', borderRadius: 16, padding: '1.2rem 1.5rem', border: '1px solid var(--sage-light)', marginBottom: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <div style={{ fontWeight: 600, color: 'var(--brown)', fontSize: '1.05rem' }}>{b.name}</div>
             {b.dateOfBirth && <div style={{ color: 'var(--brown-light)', fontSize: '0.85rem', marginTop: 2 }}>{b.dateOfBirth}</div>}
@@ -97,7 +97,7 @@ function BabyForm({ initial, userId, labels, onDone }) {
   };
 
   return (
-    <form onSubmit={handleSave} style={{ background: 'white', borderRadius: 16, padding: '1.5rem', border: '1px solid var(--sage-light)', marginTop: 16 }}>
+    <form onSubmit={handleSave} style={{ background: 'var(--bg-secondary)', borderRadius: 16, padding: '1.5rem', border: '1px solid var(--sage-light)', marginTop: 16 }}>
       <div style={{ marginBottom: 14 }}>
         <label style={labelStyle}>{labels.nameLabel}</label>
         <input value={name} onChange={e => setName(e.target.value)} required placeholder={labels.namePlaceholder}
@@ -126,7 +126,7 @@ function BabyForm({ initial, userId, labels, onDone }) {
 
 const primaryBtn = {
   padding: '10px 20px', borderRadius: 12, border: 'none', background: 'var(--sage)',
-  color: 'white', fontWeight: 600, fontSize: '0.92rem', cursor: 'pointer',
+  color: 'var(--btn-text)', fontWeight: 600, fontSize: '0.92rem', cursor: 'pointer',
   fontFamily: "'DM Sans', sans-serif",
 };
 

@@ -81,7 +81,7 @@ export default function SleepTracker() {
           background: activeSleep
             ? 'radial-gradient(circle at 35% 30%, var(--peach), var(--peach-deep))'
             : 'radial-gradient(circle at 35% 30%, var(--sage), var(--sage-deep))',
-          color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+          color: 'var(--btn-text)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
           boxShadow: activeSleep
             ? '0 12px 40px -8px rgba(200,140,100,.4)'
             : '0 12px 40px -8px rgba(80,110,90,.4)',
@@ -118,7 +118,7 @@ export default function SleepTracker() {
       }}>{s.manualEntry}</button>
 
       {showManual && (
-        <form onSubmit={handleManual} style={{ background: 'white', borderRadius: 14, padding: '1rem', border: '1px solid var(--sage-light)', marginBottom: 16 }}>
+        <form onSubmit={handleManual} style={{ background: 'var(--bg-secondary)', borderRadius: 14, padding: '1rem', border: '1px solid var(--sage-light)', marginBottom: 16 }}>
           <div style={{ display: 'flex', gap: 10, marginBottom: 10 }}>
             <div style={{ flex: 1 }}>
               <label style={labelStyle}>{s.startTime}</label>
@@ -147,7 +147,7 @@ export default function SleepTracker() {
             const h = Math.floor((e.durationMin || 0) / 60);
             const m = (e.durationMin || 0) % 60;
             return (
-              <div key={e.id} style={{ background: 'white', borderRadius: 12, padding: '10px 14px', border: '1px solid var(--sage-light)', display: 'flex', alignItems: 'center', gap: 10 }}>
+              <div key={e.id} style={{ background: 'var(--bg-secondary)', borderRadius: 12, padding: '10px 14px', border: '1px solid var(--sage-light)', display: 'flex', alignItems: 'center', gap: 10 }}>
                 <Moon size={14} color="var(--sage)" />
                 <div style={{ flex: 1 }}>
                   <span style={{ fontSize: '0.82rem', color: 'var(--brown-light)' }}>{date}</span>
@@ -168,5 +168,5 @@ export default function SleepTracker() {
 
 const labelStyle = { display: 'block', fontSize: '0.78rem', fontWeight: 600, color: 'var(--brown-light)', marginBottom: 4, textTransform: 'uppercase', letterSpacing: '0.06em' };
 const inputStyle = { width: '100%', padding: '10px 12px', borderRadius: 10, border: '1px solid var(--sage-light)', fontSize: '0.92rem', fontFamily: "'DM Sans', sans-serif", outline: 'none', boxSizing: 'border-box' };
-const logBtn = { width: '100%', padding: '12px', borderRadius: 12, border: 'none', background: 'var(--sage)', color: 'white', fontWeight: 600, fontSize: '0.95rem', cursor: 'pointer' };
+const logBtn = { width: '100%', padding: '12px', borderRadius: 12, border: 'none', background: 'var(--sage)', color: 'var(--btn-text)', fontWeight: 600, fontSize: '0.95rem', cursor: 'pointer' };
 const deleteBtn = { background: 'none', border: 'none', cursor: 'pointer', color: 'var(--brown-light)', padding: 4 };

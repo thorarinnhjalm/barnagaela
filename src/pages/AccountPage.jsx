@@ -40,7 +40,7 @@ function AccountInner() {
     <div style={{ maxWidth: 480, margin: '0 auto', padding: 'clamp(2rem, 5vw, 3.5rem) 1.5rem' }}>
       <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', color: 'var(--brown)', marginBottom: 24 }}>{a.title}</h1>
 
-      <div style={{ background: 'white', borderRadius: 16, padding: '1.5rem', border: '1px solid var(--sage-light)', marginBottom: 20 }}>
+      <div style={{ background: 'var(--bg-secondary)', borderRadius: 16, padding: '1.5rem', border: '1px solid var(--sage-light)', marginBottom: 20 }}>
         <div style={{ fontSize: '0.82rem', color: 'var(--brown-light)', textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 6 }}>{a.signedInAs}</div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           {user.photoURL && <img src={user.photoURL} alt="" style={{ width: 40, height: 40, borderRadius: '50%' }} />}
@@ -53,7 +53,7 @@ function AccountInner() {
 
       <button onClick={handleSignOut} style={{
         width: '100%', padding: '12px', borderRadius: 12, border: '1px solid var(--sage-light)',
-        background: 'white', color: 'var(--brown)', fontWeight: 600, fontSize: '0.95rem', cursor: 'pointer',
+        background: 'var(--bg-secondary)', color: 'var(--brown)', fontWeight: 600, fontSize: '0.95rem', cursor: 'pointer',
         marginBottom: 12,
       }}>{a.signOut}</button>
 

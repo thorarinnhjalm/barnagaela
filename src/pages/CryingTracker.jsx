@@ -93,7 +93,7 @@ export default function CryingTracker() {
             const time = d.toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit' });
             const date = d.toLocaleDateString(locale, { day: 'numeric', month: 'short' });
             return (
-              <div key={e.id} style={{ background: 'white', borderRadius: 12, padding: '10px 14px', border: '1px solid var(--sage-light)', display: 'flex', alignItems: 'center', gap: 10 }}>
+              <div key={e.id} style={{ background: 'var(--bg-secondary)', borderRadius: 12, padding: '10px 14px', border: '1px solid var(--sage-light)', display: 'flex', alignItems: 'center', gap: 10 }}>
                 <div style={{ flex: 1 }}>
                   <span style={{ fontSize: '0.82rem', color: 'var(--brown-light)' }}>{date} {time}</span>
                   <span style={{ marginLeft: 8, fontSize: '0.85rem', fontWeight: 600, color: 'var(--brown)' }}>{e.durationMin} min</span>
@@ -120,6 +120,6 @@ export default function CryingTracker() {
 const headingStyle = { fontSize: '1.15rem', color: 'var(--brown)', marginBottom: 16, fontFamily: "'DM Serif Display', serif" };
 const labelStyle = { display: 'block', fontSize: '0.78rem', fontWeight: 600, color: 'var(--brown-light)', marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.06em' };
 const inputStyle = { padding: '10px 12px', borderRadius: 10, border: '1px solid var(--sage-light)', fontSize: '0.92rem', fontFamily: "'DM Sans', sans-serif", outline: 'none' };
-const stepperBtn = { width: 40, height: 40, borderRadius: 12, border: '1px solid var(--sage-light)', background: 'white', fontSize: '1.2rem', cursor: 'pointer', color: 'var(--brown)' };
-const logBtn = { width: '100%', padding: '14px', borderRadius: 14, border: 'none', background: 'var(--sage)', color: 'white', fontWeight: 600, fontSize: '1rem', cursor: 'pointer' };
+const stepperBtn = { width: 40, height: 40, borderRadius: 12, border: '1px solid var(--sage-light)', background: 'var(--bg-secondary)', fontSize: '1.2rem', cursor: 'pointer', color: 'var(--brown)' };
+const logBtn = { width: '100%', padding: '14px', borderRadius: 14, border: 'none', background: 'var(--sage)', color: 'var(--btn-text)', fontWeight: 600, fontSize: '1rem', cursor: 'pointer' };
 const deleteBtn = { background: 'none', border: 'none', cursor: 'pointer', color: 'var(--brown-light)', padding: 4 };

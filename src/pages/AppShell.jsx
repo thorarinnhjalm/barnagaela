@@ -61,12 +61,12 @@ function OnboardingOverlay() {
   return (
     <div style={{
       position: 'fixed', inset: 0, zIndex: 100,
-      background: 'rgba(250,247,242,0.96)',
+      background: 'var(--nav-bg)',
       backdropFilter: 'blur(8px)',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       padding: '1.5rem',
     }}>
-      <div style={{ maxWidth: 420, width: '100%', background: 'white', borderRadius: 24, padding: '2rem 1.75rem', border: '1px solid var(--sage-light)', textAlign: 'center' }}>
+      <div style={{ maxWidth: 420, width: '100%', background: 'var(--bg-secondary)', borderRadius: 24, padding: '2rem 1.75rem', border: '1px solid var(--sage-light)', textAlign: 'center' }}>
         <div style={{ fontSize: '2.5rem', marginBottom: 12 }}>👶</div>
         <h2 style={{ fontSize: '1.4rem', color: 'var(--brown)', marginBottom: 8 }}>{ob.title}</h2>
         <p style={{ color: 'var(--brown-light)', fontSize: '0.9rem', marginBottom: 24, lineHeight: 1.5 }}>
@@ -103,7 +103,7 @@ function OnboardingOverlay() {
           </div>
           <button type="submit" disabled={busy || !name.trim()} style={{
             marginTop: 4, padding: '13px', borderRadius: 12, border: 'none',
-            background: 'var(--sage)', color: 'white', fontWeight: 600,
+            background: 'var(--sage)', color: 'var(--btn-text)', fontWeight: 600,
             fontSize: '0.95rem', cursor: busy || !name.trim() ? 'not-allowed' : 'pointer',
             opacity: busy || !name.trim() ? 0.6 : 1, fontFamily: "'DM Sans', sans-serif",
           }}>
@@ -201,7 +201,7 @@ export default function AppShell() {
 
       <nav className="mobile-bottom-nav" style={{
         position: 'fixed', bottom: 0, left: 0, right: 0,
-        background: 'rgba(250,247,242,0.92)',
+        background: 'var(--nav-bg)',
         backdropFilter: 'blur(20px) saturate(160%)',
         WebkitBackdropFilter: 'blur(20px) saturate(160%)',
         borderTop: '1px solid var(--brown-faint)',

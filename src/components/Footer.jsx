@@ -15,7 +15,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer style={{ background: 'var(--brown)', color: 'rgba(255,255,255,0.7)', padding: '3rem 1.5rem', marginTop: 'auto', fontFamily: "'Inter', sans-serif" }}>
+    <footer style={{ background: 'var(--sage-deep)', color: 'rgba(255,255,255,0.7)', padding: '3rem 1.5rem', marginTop: 'auto', fontFamily: "'Inter', sans-serif" }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2.5rem' }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>

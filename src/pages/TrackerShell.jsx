@@ -25,7 +25,7 @@ function TrackerShellInner() {
         <p style={{ color: 'var(--brown-light)', fontSize: '0.9rem', marginBottom: 24 }}>{t.babyProfile.addFirst}</p>
         <button onClick={() => navigate('/app/barn')} style={{
           padding: '12px 24px', borderRadius: 12, border: 'none', background: 'var(--sage)',
-          color: 'white', fontWeight: 600, fontSize: '0.95rem', cursor: 'pointer',
+          color: 'var(--btn-text)', fontWeight: 600, fontSize: '0.95rem', cursor: 'pointer',
         }}>{t.babyProfile.addTitle}</button>
       </div>
     );

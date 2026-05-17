@@ -81,7 +81,7 @@ export default function PatternsView() {
 
 function ChartCard({ title, children }) {
   return (
-    <div style={{ background: 'white', borderRadius: 16, padding: '16px', border: '1px solid var(--sage-light)' }}>
+    <div style={{ background: 'var(--bg-secondary)', borderRadius: 16, padding: '16px', border: '1px solid var(--sage-light)' }}>
       <div style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--brown-light)', textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 8 }}>{title}</div>
       {children}
     </div>

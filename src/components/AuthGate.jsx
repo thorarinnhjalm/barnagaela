@@ -51,7 +51,7 @@ function AuthCard() {
   };
 
   return (
-    <div style={{ maxWidth: 420, margin: '1.5rem auto', padding: '2rem 1.75rem', background: 'white', borderRadius: 20, border: '1px solid var(--sage-light)', textAlign: 'center' }}>
+    <div style={{ maxWidth: 420, margin: '1.5rem auto', padding: '2rem 1.75rem', background: 'var(--bg-secondary)', borderRadius: 20, border: '1px solid var(--sage-light)', textAlign: 'center' }}>
       <h2 style={{ fontSize: '1.4rem', color: 'var(--brown)', marginBottom: 6 }}>{a.gateTitle}</h2>
       <p style={{ color: 'var(--brown-light)', fontSize: '0.88rem', lineHeight: 1.5, marginBottom: 14 }}>{a.gateBody}</p>
 
@@ -72,7 +72,7 @@ function AuthCard() {
 
       <button onClick={handleGoogle} disabled={busy} style={{
         width: '100%', padding: '12px 16px', borderRadius: 12, border: '1px solid var(--sage-light)',
-        background: 'white', cursor: 'pointer', fontSize: '0.95rem', fontWeight: 500,
+        background: 'var(--bg-secondary)', cursor: 'pointer', fontSize: '0.95rem', fontWeight: 500,
         color: 'var(--brown)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
         transition: 'box-shadow 0.15s',
       }}
@@ -103,7 +103,7 @@ function AuthCard() {
 
         <button type="submit" disabled={busy} style={{
           padding: '12px', borderRadius: 12, border: 'none', background: 'var(--sage)',
-          color: 'white', fontWeight: 600, fontSize: '0.95rem', cursor: 'pointer',
+          color: 'var(--btn-text)', fontWeight: 600, fontSize: '0.95rem', cursor: 'pointer',
           opacity: busy ? 0.6 : 1,
         }}>
           {busy ? a.signingIn : mode === 'signup' ? a.signUp : a.signIn}

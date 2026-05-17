@@ -28,14 +28,14 @@ export default function Landing() {
         </div>
         <h1 style={{ fontSize: 'clamp(2.6rem, 6vw, 4.2rem)', marginBottom: '1.2rem', color: 'var(--brown)' }}>{l.headline}</h1>
         <p style={{ fontSize: 'clamp(1rem, 2.2vw, 1.2rem)', color: 'var(--brown-light)', lineHeight: 1.7, maxWidth: '560px', margin: '0 auto 2.5rem', fontWeight: 300 }}>{l.subheadline}</p>
-        <Link to="/app/gratur" style={{ background: 'var(--sage)', color: 'white', padding: '0.9rem 2.2rem', borderRadius: '999px', textDecoration: 'none', fontSize: '1rem', fontWeight: 500, fontFamily: "'DM Sans', sans-serif", display: 'inline-block', transition: 'opacity 0.2s, transform 0.15s', boxShadow: '0 4px 20px rgba(107, 143, 113, 0.3)' }}
+        <Link to="/app/gratur" style={{ background: 'var(--sage)', color: 'var(--btn-text)', padding: '0.9rem 2.2rem', borderRadius: '999px', textDecoration: 'none', fontSize: '1rem', fontWeight: 500, fontFamily: "'DM Sans', sans-serif", display: 'inline-block', transition: 'opacity 0.2s, transform 0.15s', boxShadow: '0 4px 20px rgba(107, 143, 113, 0.3)' }}
           onMouseEnter={e => { e.currentTarget.style.opacity = '0.9'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
           onMouseLeave={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.transform = 'translateY(0)'; }}
         >{l.cta}</Link>
       </section>
 
       {/* Pillars */}
-      <section style={{ padding: 'clamp(3rem, 6vw, 5rem) 1.5rem', background: 'white' }}>
+      <section style={{ padding: 'clamp(3rem, 6vw, 5rem) 1.5rem', background: 'var(--bg-secondary)' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <h2 style={{ textAlign: 'center', fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)', marginBottom: '0.75rem' }}>{l.pillarsTitle}</h2>
           <p style={{ textAlign: 'center', color: 'var(--brown-light)', marginBottom: '3rem', fontSize: '1rem' }}>{l.pillarsSubtitle}</p>
@@ -45,7 +45,7 @@ export default function Landing() {
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.boxShadow = '0 8px 32px rgba(92,74,58,0.1)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
               >
-                <div style={{ width: '52px', height: '52px', background: iconBg, borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', marginBottom: '1.2rem' }}>{icon}</div>
+                <div style={{ width: '52px', height: '52px', background: iconBg, borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--btn-text)', marginBottom: '1.2rem' }}>{icon}</div>
                 <h3 style={{ fontSize: '1.35rem', marginBottom: '0.5rem', color: 'var(--brown)' }}>{label}</h3>
                 <p style={{ color: 'var(--brown-light)', fontSize: '0.93rem', lineHeight: 1.6 }}>{desc}</p>
               </Link>
@@ -60,7 +60,7 @@ export default function Landing() {
           <h2 style={{ textAlign: 'center', fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)', marginBottom: '3rem' }}>{l.featuresTitle}</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem' }}>
             {features.map(({ icon, title, desc }) => (
-              <div key={title} style={{ background: 'white', borderRadius: '16px', padding: '1.75rem', border: '1px solid var(--sage-light)' }}>
+              <div key={title} style={{ background: 'var(--bg-secondary)', borderRadius: '16px', padding: '1.75rem', border: '1px solid var(--sage-light)' }}>
                 <div style={{ width: '44px', height: '44px', background: 'var(--sage-light)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--sage)', marginBottom: '1rem' }}>{icon}</div>
                 <h3 style={{ fontSize: '1.15rem', marginBottom: '0.4rem', color: 'var(--brown)' }}>{title}</h3>
                 <p style={{ color: 'var(--brown-light)', fontSize: '0.9rem', lineHeight: 1.65 }}>{desc}</p>
@@ -82,7 +82,7 @@ export default function Landing() {
       <section style={{ padding: 'clamp(3.5rem, 7vw, 6rem) 1.5rem', textAlign: 'center', background: 'var(--cream)' }}>
         <h2 style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)', marginBottom: '0.8rem' }}>{l.ctaBottomTitle}</h2>
         <p style={{ color: 'var(--brown-light)', marginBottom: '2rem', fontSize: '1rem' }}>{l.ctaBottomSubtitle}</p>
-        <Link to="/app/gratur" style={{ background: 'var(--sage)', color: 'white', padding: '0.9rem 2.4rem', borderRadius: '999px', textDecoration: 'none', fontSize: '1rem', fontWeight: 500, fontFamily: "'DM Sans', sans-serif", display: 'inline-block', boxShadow: '0 4px 20px rgba(107, 143, 113, 0.3)' }}>{l.ctaBottomButton}</Link>
+        <Link to="/app/gratur" style={{ background: 'var(--sage)', color: 'var(--btn-text)', padding: '0.9rem 2.4rem', borderRadius: '999px', textDecoration: 'none', fontSize: '1rem', fontWeight: 500, fontFamily: "'DM Sans', sans-serif", display: 'inline-block', boxShadow: '0 4px 20px rgba(107, 143, 113, 0.3)' }}>{l.ctaBottomButton}</Link>
       </section>
     </div>
   );

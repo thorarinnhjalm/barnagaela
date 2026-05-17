@@ -27,6 +27,7 @@
   --sand: #e4e2df;
   --espresso-faint: rgba(27, 28, 26, 0.05);
   --nav-bg: rgba(251, 249, 246, 0.92);
+  --btn-text: #ffffff;
 
   /* Utilities */
   --radius-sm: 8px;
@@ -47,6 +48,7 @@ html.dark {
   --sand: #393431;
   --espresso-faint: rgba(0, 0, 0, 0.4);
   --nav-bg: rgba(22, 19, 17, 0.92);
+  --btn-text: #161311;
   
   --sage: #a7baac;
   --sage-deep: #1f1b18;
@@ -73,6 +75,7 @@ html.dark {
     --sand: #393431;
     --espresso-faint: rgba(0, 0, 0, 0.4);
     --nav-bg: rgba(22, 19, 17, 0.92);
+    --btn-text: #161311;
     
     --sage: #a7baac;
     --sage-deep: #1f1b18;

@@ -56,7 +56,7 @@ function TopicPage({ topicKey }) {
         {t.topics.tipsHeading}
       </div>
 
-      <div style={{ background: 'white', borderRadius: 18, padding: '0 1.5rem', border: '1px solid var(--brown-faint)' }}>
+      <div style={{ background: 'var(--bg-secondary)', borderRadius: 18, padding: '0 1.5rem', border: '1px solid var(--brown-faint)' }}>
         {topic.tips.map((tip, i) => (
           <AccordionItem key={tip.id} title={tip.title} body={tip.body} index={i} />
         ))}

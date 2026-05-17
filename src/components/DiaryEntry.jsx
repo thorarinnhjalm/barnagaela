@@ -23,7 +23,7 @@ export default function DiaryEntry({ entry, onDelete }) {
   });
 
   return (
-    <div style={{ background: 'white', borderRadius: '12px', padding: '1.2rem 1.4rem', border: '1px solid var(--sage-light)', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+    <div style={{ background: 'var(--bg-secondary)', borderRadius: '12px', padding: '1.2rem 1.4rem', border: '1px solid var(--sage-light)', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
       <div style={{ flex: 1 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
           <span style={{ background: CATEGORY_COLORS[entry.category] || '#EEE', color: 'var(--brown)', fontSize: '0.78rem', fontWeight: 600, padding: '0.2rem 0.7rem', borderRadius: '999px', fontFamily: "'DM Sans', sans-serif" }}>

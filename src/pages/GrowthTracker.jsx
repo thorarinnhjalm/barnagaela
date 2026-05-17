@@ -76,7 +76,7 @@ export default function GrowthTracker() {
             const locale = lang === 'is' ? 'is-IS' : lang === 'pl' ? 'pl-PL' : 'en-GB';
             const dateStr = new Date(e.date + 'T00:00:00').toLocaleDateString(locale, { day: 'numeric', month: 'short', year: 'numeric' });
             return (
-              <div key={e.id} style={{ background: 'white', borderRadius: 12, padding: '10px 14px', border: '1px solid var(--sage-light)', display: 'flex', alignItems: 'center', gap: 10 }}>
+              <div key={e.id} style={{ background: 'var(--bg-secondary)', borderRadius: 12, padding: '10px 14px', border: '1px solid var(--sage-light)', display: 'flex', alignItems: 'center', gap: 10 }}>
                 <TrendingUp size={14} color="var(--sage)" />
                 <div style={{ flex: 1 }}>
                   <span style={{ fontSize: '0.82rem', color: 'var(--brown-light)' }}>{dateStr}</span>
@@ -125,7 +125,7 @@ function GrowthChart({ entries, labels }) {
   };
 
   return (
-    <div style={{ marginTop: 20, background: 'white', borderRadius: 14, padding: '14px', border: '1px solid var(--sage-light)' }}>
+    <div style={{ marginTop: 20, background: 'var(--bg-secondary)', borderRadius: 14, padding: '14px', border: '1px solid var(--sage-light)' }}>
       <svg viewBox={`0 0 ${W} ${H}`} style={{ width: '100%', height: 'auto' }}>
         {withWeight.length >= 2 && makeLine(withWeight, 'weightKg', 'var(--peach)')}
         {withLength.length >= 2 && makeLine(withLength, 'lengthCm', 'var(--sage)')}
@@ -141,5 +141,5 @@ function GrowthChart({ entries, labels }) {
 const headingStyle = { fontSize: '1.15rem', color: 'var(--brown)', marginBottom: 16, fontFamily: "'DM Serif Display', serif" };
 const labelStyle = { display: 'block', fontSize: '0.78rem', fontWeight: 600, color: 'var(--brown-light)', marginBottom: 4, textTransform: 'uppercase', letterSpacing: '0.06em' };
 const inputStyle = { width: '100%', padding: '10px 12px', borderRadius: 10, border: '1px solid var(--sage-light)', fontSize: '0.92rem', fontFamily: "'DM Sans', sans-serif", outline: 'none', boxSizing: 'border-box' };
-const logBtn = { width: '100%', padding: '14px', borderRadius: 14, border: 'none', background: 'var(--sage)', color: 'white', fontWeight: 600, fontSize: '1rem', cursor: 'pointer' };
+const logBtn = { width: '100%', padding: '14px', borderRadius: 14, border: 'none', background: 'var(--sage)', color: 'var(--btn-text)', fontWeight: 600, fontSize: '1rem', cursor: 'pointer' };
 const deleteBtn = { background: 'none', border: 'none', cursor: 'pointer', color: 'var(--brown-light)', padding: 4 };
