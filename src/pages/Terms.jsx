@@ -16,8 +16,15 @@ export default function Terms() {
         </p>
 
         <p>
-          <strong>2. Engin söfnun persónugagna (Privacy by Design)</strong><br />
-          Við erum ekki að logga nein persónugögn um þig eða barnið þitt fyrir okkar eigin notkun. Ef þú notar dagbókina án innskráningar eru gögnin vistuð eingöngu staðbundið á þínu eigin tæki (í vafra). Ef þú velur að skrá þig inn til að samstilla gögn á milli tækja, eru þau gögn varin og aðeins aðgengileg þér. Við seljum aldrei eða deilum gögnum með þriðja aðila.
+          <strong>2. Meðhöndlun og geymsla gagna (Persónuvernd)</strong><br />
+          Við virðum friðhelgi þína og barnsins þíns og gætum fyllsta öryggis í meðferð allra gagna. Hér er útskýrt nákvæmlega hvernig gögn eru geymd:
+          <ul style={{ marginTop: '0.5rem', marginLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+            <li><strong>Staðbundin vistun (Án innskráningar):</strong> Ef þú notar kerfið án þess að búa til aðgang, eru öll gögn (dagbókarfærslur, svefn, næring) eingöngu vistuð staðbundið í vafra tækisins þíns. Við höfum engan aðgang að þeim og þau eru ekki send á neina netþjóna.</li>
+            <li><strong>Skýjavistun (Með innskráningu):</strong> Ef þú ákveður að stofna aðgang (til að samstilla gögn milli tækja), vistum við grunnupplýsingar um aðganginn þinn (t.d. netfang) og dagbókarfærslurnar þínar.</li>
+            <li><strong>Hvar gögnin eru geymd:</strong> Gögn innskráðra notenda eru vistuð í skýjaþjónustu Google (Firebase) á netþjónum sem uppfylla ströngustu öryggiskröfur um gagnavernd (GDPR).</li>
+            <li><strong>Dulkóðun og öryggi:</strong> Öll samskipti milli tækis þíns og gagnagrunns okkar fara fram yfir örugga dulkóðaða tengingu (HTTPS/SSL). Einnig eru öll gögn dulkóðuð í hvíld (encrypted at rest) í gagnagrunnum Firebase, sem þýðir að þau eru ólæsileg án réttrar auðkenningar.</li>
+            <li><strong>Sölu gagna hafnað:</strong> Við deilum hvorki né seljum upplýsingarnar þínar til þriðja aðila. Þær eru eingöngu nýttar til að veita þér aðgang að eigin skráningum.</li>
+          </ul>
         </p>
 
         <p>
