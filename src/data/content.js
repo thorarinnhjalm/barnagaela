@@ -40,9 +40,9 @@ export const topics = {
         'Settu barnið niður í rúmið — á bakið, á flatan grunn',
         'Farðu í annað herbergi',
         'Dragðu andann djúpt 10 sinnum',
-        'Hringdu í einhvern sem þú treystir',
+        'Hringdu í einhvern sem þú treystir eða í 1700 (Vaktsími Heilsugæslunnar) / 112 (Neyðarlínan)',
       ],
-      note: 'Það er aldrei skömm að þurfa hjálp. Þetta er erfitt.',
+      note: 'Það er aldrei skömm að þurfa hjálp. Vaktsími Heilsugæslunnar er 1700 (allan sólarhringinn) og á Heilsuveru geturðu leitað ráða hjá fagfólki. Þetta er erfitt.',
     },
   },
 
@@ -140,7 +140,7 @@ export const selfCareItems = [
   {
     id: 'sc4',
     title: 'Talaðu við einhvern',
-    body: 'Ef þér líður þunglynt, kvíðið eða yfirgnæft — talaðu við lækni þinn eða ljósmóður. Fæðingarþunglyndi og kvíði eru algeng og meðhöndlanleg. Að biðja um hjálp er styrkur.',
+    body: 'Ef þér líður þunglynt, kvíðið eða yfirgnæft — talaðu við lækni þinn eða ljósmóður. Vaktsími heilsugæslunnar (1700) er opinn allan sólarhringinn. Að biðja um hjálp er styrkur.',
   },
   {
     id: 'sc5',

@@ -83,9 +83,9 @@ export default {
           'Settu barnið niður í rúmið — á bakið, á flatan grunn',
           'Farðu í annað herbergi',
           'Dragðu andann djúpt 10 sinnum',
-          'Hringdu í einhvern sem þú treystir',
+          'Hringdu í einhvern sem þú treystir eða í 1700 (Vaktsími) / 112 (Neyðarlínan)',
         ],
-        note: 'Það er aldrei skömm að þurfa hjálp. Þetta er erfitt.',
+        note: 'Það er aldrei skömm að þurfa hjálp. Vaktsími Heilsugæslunnar er 1700 (allan sólarhringinn) og á Heilsuveru færðu ráð hjá fagfólki. Þetta er erfitt.',
       },
     },
 
@@ -178,7 +178,7 @@ export default {
       {
         id: 'sc4',
         title: 'Talaðu við einhvern',
-        body: 'Ef þér líður þunglynt, kvíðið eða yfirgnæft — talaðu við lækni þinn eða ljósmóður. Fæðingarþunglyndi og kvíði eru algeng og meðhöndlanleg. Að biðja um hjálp er styrkur.',
+        body: 'Ef þér líður þunglynt, kvíðið eða yfirgnæft — talaðu við lækni þinn eða ljósmóður. Vaktsími heilsugæslunnar (1700) er opinn allan sólarhringinn. Að biðja um hjálp er styrkur.',
       },
       {
         id: 'sc5',
@@ -192,7 +192,7 @@ export default {
       },
     ],
     ctaTitle: 'Þarftu að tala við einhvern?',
-    ctaBody: 'Heilsugæslan þín er til. Heilbrigðisstarfsmaður þinn vill hjálpa — þ.m.t. ef þér líður þunglynt eða kvíðið eftir fæðingu. Það kostar ekkert að hringja.',
+    ctaBody: 'Heilsugæslan þín er til. Vaktsími Heilsugæslunnar er 1700 (opinn allan sólarhringinn). Þú getur líka sent fyrirspurn á Heilsuveru hvenær sem er. Í neyð, hringdu í 112.',
   },
 
   diary: {
