@@ -2,7 +2,7 @@ import { useContext, useState, useEffect } from 'react';
 import { ThemeContext } from './theme';
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(localStorage.getItem('lulla-theme') || 'auto');
+  const [theme, setTheme] = useState(localStorage.getItem('barnaglaedur-theme') || 'auto');
 
   useEffect(() => {
     const root = document.documentElement;
@@ -15,7 +15,7 @@ export function ThemeProvider({ children }) {
     } else {
       root.classList.remove('dark', 'light');
     }
-    localStorage.setItem('lulla-theme', theme);
+    localStorage.setItem('barnaglaedur-theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {
