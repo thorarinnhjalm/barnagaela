@@ -25,7 +25,7 @@ export default function Landing() {
       <section style={{ padding: 'clamp(4rem, 10vw, 8rem) 1.5rem', textAlign: 'center', maxWidth: '720px', margin: '0 auto' }}>
         <h1 style={{ fontSize: 'clamp(2.6rem, 6vw, 4.2rem)', marginBottom: '1.2rem', color: 'var(--brown)' }}>{l.headline}</h1>
         <p style={{ fontSize: 'clamp(1rem, 2.2vw, 1.2rem)', color: 'var(--brown-light)', lineHeight: 1.7, maxWidth: '560px', margin: '0 auto 2.5rem', fontWeight: 300 }}>{l.subheadline}</p>
-        <Link to="/app/gratur" style={{ background: 'var(--sage)', color: 'var(--btn-text)', padding: '0.9rem 2.2rem', borderRadius: '999px', textDecoration: 'none', fontSize: '1rem', fontWeight: 500, fontFamily: "'DM Sans', sans-serif", display: 'inline-block', transition: 'opacity 0.2s, transform 0.15s', boxShadow: '0 4px 20px rgba(107, 143, 113, 0.3)' }}
+        <Link to="/app" style={{ background: 'var(--sage)', color: 'var(--btn-text)', padding: '0.9rem 2.2rem', borderRadius: '999px', textDecoration: 'none', fontSize: '1rem', fontWeight: 500, fontFamily: "'DM Sans', sans-serif", display: 'inline-block', transition: 'opacity 0.2s, transform 0.15s', boxShadow: '0 4px 20px rgba(107, 143, 113, 0.3)' }}
           onMouseEnter={e => { e.currentTarget.style.opacity = '0.9'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
           onMouseLeave={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.transform = 'translateY(0)'; }}
         >{l.cta}</Link>
@@ -78,7 +78,7 @@ export default function Landing() {
       {/* Bottom CTA */}
       <section style={{ padding: 'clamp(3.5rem, 7vw, 6rem) 1.5rem', textAlign: 'center', background: 'var(--cream)' }}>
         <h2 style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)', marginBottom: '1.5rem' }}>{l.ctaBottomTitle}</h2>
-        <Link to="/app/gratur" style={{ background: 'var(--sage)', color: 'var(--btn-text)', padding: '0.9rem 2.4rem', borderRadius: '999px', textDecoration: 'none', fontSize: '1rem', fontWeight: 500, fontFamily: "'DM Sans', sans-serif", display: 'inline-block', boxShadow: '0 4px 20px rgba(107, 143, 113, 0.3)' }}>{l.ctaBottomButton}</Link>
+        <Link to="/app" style={{ background: 'var(--sage)', color: 'var(--btn-text)', padding: '0.9rem 2.4rem', borderRadius: '999px', textDecoration: 'none', fontSize: '1rem', fontWeight: 500, fontFamily: "'DM Sans', sans-serif", display: 'inline-block', boxShadow: '0 4px 20px rgba(107, 143, 113, 0.3)' }}>{l.ctaBottomButton}</Link>
       </section>
     </div>
   );

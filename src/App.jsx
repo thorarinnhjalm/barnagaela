@@ -6,6 +6,7 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Landing from './pages/Landing';
 import AppShell from './pages/AppShell';
+import Overview from './pages/Overview';
 import { Crying, Sleep, Feeding } from './pages/TopicPage';
 import Diary from './pages/Diary';
 import SelfCare from './pages/SelfCare';
@@ -31,7 +32,7 @@ export default function App() {
               <Route path="/" element={<Landing />} />
               <Route path="/skilmalar" element={<Terms />} />
               <Route path="/app" element={<AppShell />}>
-                <Route index element={<Navigate to="/app/gratur" replace />} />
+                <Route index element={<Overview />} />
                 <Route path="gratur"   element={<Crying />} />
                 <Route path="svefn"    element={<Sleep />} />
                 <Route path="faeding"  element={<Feeding />} />

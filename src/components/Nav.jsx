@@ -84,7 +84,7 @@ export default function Nav() {
 
             <div className="hide-on-mobile">
               {!isApp && (
-                <Link to="/app/gratur" style={{
+                <Link to="/app" style={{
                   background: 'var(--sage)', color: 'var(--btn-text)', padding: '0.5rem 1.2rem',
                   borderRadius: '999px', textDecoration: 'none', fontSize: '0.9rem',
                   fontWeight: 500, fontFamily: "'Inter', sans-serif", transition: 'opacity 0.2s',
@@ -130,7 +130,7 @@ export default function Nav() {
           </button>
 
           {!isApp ? (
-            <Link to="/app/gratur" onClick={() => setMobileMenuOpen(false)} style={{
+            <Link to="/app" onClick={() => setMobileMenuOpen(false)} style={{
               background: 'var(--sage)', color: 'var(--btn-text)', padding: '0.75rem',
               borderRadius: '8px', textDecoration: 'none', fontSize: '0.95rem',
               fontWeight: 600, textAlign: 'center', width: '100%'

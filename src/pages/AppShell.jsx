@@ -152,7 +152,7 @@ export default function AppShell() {
   ];
 
   const MOBILE_NAV = [
-    { to: '/app/gratur',          label: t.sidebar.heading,    icon: <BookOpen size={20} /> },
+    { to: '/app',                 label: t.sidebar.heading,    icon: <BookOpen size={20} /> },
     { to: '/app/maelar/faeding',  label: t.tracker.title,      icon: <Activity size={20} /> },
     { to: '/app/anda',            label: t.sidebar.breathing,  icon: <Wind size={20} /> },
     { to: '/app/dagbok',          label: t.sidebar.diary,      icon: <BookMarked size={20} /> },
@@ -209,22 +209,32 @@ export default function AppShell() {
         padding: '0.4rem 0.2rem calc(0.4rem + env(safe-area-inset-bottom, 0))',
         zIndex: 40,
       }}>
-        {MOBILE_NAV.map(({ to, label, icon }) => (
-          <NavLink key={to} to={to}
-            style={({ isActive }) => ({
-              display: 'flex', flexDirection: 'column', alignItems: 'center',
-              gap: '0.2rem', padding: '0.45rem 0.3rem', textDecoration: 'none',
-              color: isActive ? 'var(--sage-deep)' : 'var(--brown-light)',
-              fontFamily: "'DM Sans', sans-serif", fontSize: '0.66rem',
-              flex: 1, transition: 'color 0.15s',
-            })}
-          >{icon}{label}</NavLink>
-        ))}
+        {MOBILE_NAV.map(({ to, label, icon }) => {
+          // If the item is the main overview (/app), it should be active for /app and /app/gratur, /app/svefn, /app/faeding
+          const isGuideLink = to === '/app';
+          return (
+            <NavLink key={to} to={to} end={!isGuideLink}
+              className={({ isActive }) => isGuideLink ? "guide-nav-link" : (isActive ? "active" : "")}
+              style={({ isActive }) => ({
+                display: 'flex', flexDirection: 'column', alignItems: 'center',
+                gap: '0.2rem', padding: '0.45rem 0.3rem', textDecoration: 'none',
+                color: isActive ? 'var(--sage-deep)' : 'var(--brown-light)',
+                fontFamily: "'DM Sans', sans-serif", fontSize: '0.66rem',
+                flex: 1, transition: 'color 0.15s',
+              })}
+            >{icon}{label}</NavLink>
+          );
+        })}
       </nav>
 
       <style>{`
         @media (min-width: 760px) { .desktop-sidebar { display: block !important; } }
         @media (max-width: 759px) { .mobile-bottom-nav { display: flex !important; } main { padding-bottom: 80px; } }
+        /* Special active state for the Guide tab */
+        .mobile-bottom-nav a.guide-nav-link.active,
+        .mobile-bottom-nav a.guide-nav-link[aria-current="page"] {
+          color: var(--sage-deep) !important;
+        }
       `}</style>
     </div>
   );
