@@ -9,12 +9,12 @@ export default {
 
   landing: {
     badge: 'Frítt · Engin skráning',
-    headline: 'Hjálp fyrir þreytta foreldra',
+    headline: 'Traustur stuðningur við þreytta foreldra',
     subheadline: 'Leiðbeiningar um grát, svefn og næringu barna 0–24 mánaða.',
     cta: 'Opna leiðbeiningar',
     pillarsTitle: 'Þrjú meginsvið',
     pillarsSubtitle: 'Allt sem foreldrar 0–24 mánaða barna spyrja um mest.',
-    pillarCrying: 'Hvers vegna grátir barnið og hvernig á að svara.',
+    pillarCrying: 'Af hverju grætur barnið og hvernig á að bregðast við.',
     pillarSleep: 'Svefnrútur, næturvakanir og hvíld fyrir alla.',
     pillarFeeding: 'Brjóstamjólk, flaska og upphafsmat.',
     featuresTitle: 'Hvað er í boði',
@@ -48,7 +48,7 @@ export default {
 
     gratur: {
       label: 'Grátur',
-      description: 'Af hverju grátir barnið og hvað hjálpar',
+      description: 'Af hverju grætur barnið og hvað hjálpar',
       intro: 'Grátur er eini samskiptamáti ungbarna. Það er eðlilegt og þýðir ekki að þú sért að gera eitthvað rangt. Öll börn gráta — sum meira en önnur. Þú ert gott foreldri.',
       tips: [
         {
@@ -68,19 +68,19 @@ export default {
         },
         {
           id: 'g4',
-          title: 'Kveiktu á hvítstyrk',
-          body: 'Stöðugt bakgrunnshljóð — þvottavél, þurrkari, vifta, eða sérstök hvítstyrkforrit — líkir eftir hljóðum móðurkviðsins og hjálpar mörgum börnum að róast.',
+          title: 'Kveiktu á hvítu suði',
+          body: 'Stöðugt bakgrunnshljóð — þvottavél, þurrkari, vifta, eða smáforrit sem spila hvítt suð — líkir eftir hljóðum móðurkviðsins og hjálpar mörgum börnum að róast.',
         },
         {
           id: 'g5',
           title: 'Settu barnið niður ef þér líður illa',
-          body: 'Ef þú finnur fyrir gremju eða yfirþyrmingu: settu barnið niður á öruggan stað — í rúmið eða vaggan — og farðu í annað herbergi í 5 mínútur. Þetta er rétt og ábyrgt.',
+          body: 'Ef þú finnur fyrir gremju eða yfirþyrmingu: settu barnið niður á öruggan stað — í rúmið eða vögguna — og farðu í annað herbergi í 5 mínútur. Þetta er rétt og ábyrgt.',
         },
       ],
       emergency: {
         title: 'Neyðaráætlun',
         steps: [
-          'Settu barnið niður í rúmið — á bakið, á flatan grunn',
+          'Settu barnið niður í rúmið — á bakið, á slétt og stíft undirlag',
           'Farðu í annað herbergi',
           'Dragðu andann djúpt 10 sinnum',
           'Hringdu í einhvern sem þú treystir eða í 1700 (Vaktsími) / 112 (Neyðarlínan)',
@@ -92,7 +92,7 @@ export default {
     svefn: {
       label: 'Svefn',
       description: 'Svefnrútur og hvíld fyrir barn og foreldri',
-      intro: 'Svefnvandamál eru ein algengasta ástæðan fyrir því að foreldrar leita sér aðstoðar. Þú ert ekki ein/n. Svefnþraut er raunveruleg og hefur áhrif á allt — gefðu þér leyfi til að forgangsraða hvíld.',
+      intro: 'Svefnvandamál eru ein algengasta ástæðan fyrir því að foreldrar leita sér aðstoðar. Þú ert ekki ein/n. Langvarandi svefnleysi er raunverulegt og hefur áhrif á allt — gefðu þér leyfi til að forgangsraða hvíld.',
       tips: [
         {
           id: 's1',
@@ -102,7 +102,7 @@ export default {
         {
           id: 's2',
           title: 'Settu barnið niður þegar það er syfjað',
-          body: 'Reyndu að setja barnið í rúmið þegar það er syfjað en enn vakið. Þetta hjálpar því að læra að sofna sjálft — sem er mikilvæg færni til lengri tíma.',
+          body: 'Reyndu að setja barnið í rúmið þegar það er syfjað en ennþá vakandi. Þetta hjálpar því að læra að sofna sjálft — sem er mikilvæg færni til lengri tíma.',
         },
         {
           id: 's3',
@@ -111,13 +111,13 @@ export default {
         },
         {
           id: 's4',
-          title: 'Dökkt herbergi og hvítstyrkur',
-          body: 'Myrkur sendir merki til heilans um að sofa. Hvítstyrkur getur hjálpað barni að sofna hraðar og sofa lengur. Báðar aðferðirnar eru öruggar.',
+          title: 'Myrkvað herbergi og hvítt suð',
+          body: 'Myrkur sendir merki til heilans um að sofa. Hvítt suð getur hjálpað barni að sofna hraðar og sofa lengur. Báðar aðferðirnar eru öruggar.',
         },
         {
           id: 's5',
           title: 'Skiptistu á um næturvaktir',
-          body: 'Svefnþraut foreldra er raunverulegt heilsuvandamál. Ef mögulegt er — skiptistu á við maka, ömmu, afa eða vin. Þú verður betra foreldri eftir hvíld.',
+          body: 'Langvarandi svefnleysi foreldra er raunveruleg heilsuáhætta. Ef mögulegt er — skiptistu á við maka, ömmu, afa eða vin. Þú verður betra foreldri eftir hvíld.',
         },
       ],
     },
@@ -144,13 +144,13 @@ export default {
         },
         {
           id: 'f4',
-          title: 'Roping eftir máltíð',
+          title: 'Að láta ropa eftir máltíð',
           body: 'Loftbólur geta valdið óþægindum og gráti. Láttu barnið ropa í 10–15 mínútur eftir hverja máltíð — haltu því uppréttu á öxlinni þinni.',
         },
         {
           id: 'f5',
-          title: 'Upphafsmat (ca. 6 mánuðir)',
-          body: 'Byrjaðu einfalt: mjúkt grænmeti (gulrót, kúrbít, baunir), kornmeti og ávextir. Eitt nýtt matvæli í einu svo þú getir fylgst með viðbrögðum. Það má vera klúðurlegt — þannig læra börn.',
+          title: 'Fyrsta fasta fæðan (ca. 6 mánuðir)',
+          body: 'Byrjaðu einfalt: mjúkt grænmeti (gulrót, kúrbít, baunir), kornmeti og ávextir. Eitt nýtt matvæli í einu svo þú getir fylgst með viðbrögðum. Það má vera smá subbuskapur — þannig læra börn.',
         },
       ],
     },
@@ -163,26 +163,26 @@ export default {
       {
         id: 'sc1',
         title: 'Þú mátt biðja um hjálp',
-        body: 'Foreldrahlutverkið er ekki einhleypur leikur. Það þarf þorp til að ala upp barn. Biddu vin, fjölskyldumeðlim eða ábyrgan nágranna um aðstoð — og þegar þeir bjóðast fram, segjum já.',
+        body: 'Uppeldi er hópavinna. Það þarf þorp til að ala upp barn. Biddu vin, fjölskyldumeðlim eða ábyrgan nágranna um aðstoð — og þegar þeir bjóðast fram, segjum já.',
       },
       {
         id: 'sc2',
         title: 'Smá hlé skipta máli',
-        body: '10 mínútur úti í loftinu, kaffibolla í friði, sturtubað — þessar litlu hlé hlaða rafmagn. Þú þarft ekki klukkustundar tíma til að endurnæra þig.',
+        body: '10 mínútur úti í loftinu, kaffibolla í friði, sturtubað — þessi stuttu hlé hlaða batteríin. Þú þarft ekki klukkustundar tíma til að endurnæra þig.',
       },
       {
         id: 'sc3',
         title: 'Svefn þegar barnið sefur',
-        body: 'Já, þú hefur heyrt þetta. Nei, húsið þarf ekki að vera þrifið. Svefnþraut á fyrstu vikunum er raunveruleg heilsuáhætta — veldu hvíld þegar val gefst.',
+        body: 'Já, þú hefur heyrt þetta. Nei, húsið þarf ekki að vera þrifið. Svefnleysi á fyrstu vikunum er raunveruleg heilsuáhætta — veldu hvíld þegar val gefst.',
       },
       {
         id: 'sc4',
         title: 'Talaðu við einhvern',
-        body: 'Ef þér líður þunglynt, kvíðið eða yfirgnæft — talaðu við lækni þinn eða ljósmóður. Vaktsími heilsugæslunnar (1700) er opinn allan sólarhringinn. Að biðja um hjálp er styrkur.',
+        body: 'Ef þú finnur fyrir þunglyndi, kvíða eða vanmætti — talaðu við lækni þinn eða ljósmóður. Vaktsími heilsugæslunnar (1700) er opinn allan sólarhringinn. Að biðja um hjálp er styrkur.',
       },
       {
         id: 'sc5',
-        title: 'Foreldrakennd er ekki alltaf yndi',
+        title: 'Foreldrahlutverkið er ekki alltaf dans á rósum',
         body: 'Það er allt í lagi að elska barnið sitt og vera samt þreytt, pirrað eða einmana. Þessar tilfinningar ganga saman. Þú ert manneskja.',
       },
       {
@@ -332,7 +332,7 @@ export default {
       whatHelped: 'Hvað hjálpaði?',
       helped: {
         swaddle: 'Innpökkun',
-        whiteNoise: 'Hvítstyrkur',
+        whiteNoise: 'Hvítt suð',
         walking: 'Ganga',
         feeding: 'Næring',
         diaper: 'Bleyjuskipti',
