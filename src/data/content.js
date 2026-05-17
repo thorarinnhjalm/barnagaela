@@ -2,7 +2,7 @@ export const topics = {
   gratur: {
     id: 'gratur',
     label: 'Grátur',
-    emoji: '🌙',
+    icon: 'Moon',
     color: 'peach',
     path: '/app/gratur',
     description: 'Af hverju grátir barnið og hvað hjálpar',
@@ -49,7 +49,7 @@ export const topics = {
   svefn: {
     id: 'svefn',
     label: 'Svefn',
-    emoji: '⭐',
+    icon: 'Star',
     color: 'sage',
     path: '/app/svefn',
     description: 'Svefnrútur og hvíld fyrir barn og foreldri',
@@ -86,7 +86,7 @@ export const topics = {
   faeding: {
     id: 'faeding',
     label: 'Fæðing',
-    emoji: '🌱',
+    icon: 'Leaf',
     color: 'peach',
     path: '/app/faeding',
     description: 'Brjóstamjólk, flaska og upphafsmat',

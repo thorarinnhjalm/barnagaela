@@ -258,6 +258,14 @@ export default {
     freeNote: 'Poradnik jest zawsze bezpłatny — nie potrzebujesz konta, żeby go czytać.',
   },
 
+  onboarding: {
+    title: 'Zaczynamy!',
+    body: 'Potrzebujemy twojego imienia i imienia dziecka.',
+    bodyBabyOnly: 'Potrzebujemy tylko imienia dziecka, aby zacząć.',
+    parentNameLabel: 'Twoje imię',
+    parentNamePlaceholder: 'Rodzic',
+  },
+
   babyProfile: {
     title: 'Profil dziecka',
     addTitle: 'Dodaj dziecko',
@@ -366,9 +374,9 @@ export default {
   },
 
   footer: {
-    description: 'Poradnik oparty na badaniach naukowych dla zmęczonych rodziców. Stworzony z miłością w Islandii.',
+    description: 'Poradnik oparty na badaniach naukowych dla zmęczonych rodziców.',
     contentHeading: 'Treść',
     disclaimer: 'Ten poradnik nie zastępuje porady lekarza. Jeśli podejrzewasz, że coś jest nie tak — skontaktuj się z lekarzem lub położną.',
-    copyright: 'Zrobione z ♥ w Islandii',
+    copyright: 'Podmiot odpowiedzialny: Neðri Hóll Hugmyndahús ehf',
   },
 };

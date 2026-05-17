@@ -266,6 +266,14 @@ export default {
     freeNote: 'The guide is always free — no account needed to read it.',
   },
 
+  onboarding: {
+    title: "Let's get started!",
+    body: "We need your name and your baby's name to get going.",
+    bodyBabyOnly: "We just need your baby's name to get started.",
+    parentNameLabel: 'Your name',
+    parentNamePlaceholder: 'Parent',
+  },
+
   // Baby profile
   babyProfile: {
     title: 'Baby profile',
@@ -378,9 +386,9 @@ export default {
 
   // Footer
   footer: {
-    description: 'Evidence-based guidance for tired parents. Made with love in Iceland.',
+    description: 'Evidence-based guidance for tired parents.',
     contentHeading: 'Content',
     disclaimer: "These guidelines do not replace advice from a healthcare professional. If you suspect something is wrong — contact your doctor or midwife.",
-    copyright: 'Made with ♥ in Iceland',
+    copyright: 'Operated by: Neðri Hóll Hugmyndahús ehf',
   },
 };

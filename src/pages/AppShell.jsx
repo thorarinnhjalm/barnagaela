@@ -1,7 +1,12 @@
+import { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { Moon, BookOpen, Leaf, BookMarked, Heart, Wind, Activity, Baby, Settings } from 'lucide-react';
+import { collection, addDoc, updateDoc, doc, serverTimestamp } from 'firebase/firestore';
+import { updateProfile } from 'firebase/auth';
+import { db } from '../data/firebase';
 import { useI18n } from '../data/i18n';
 import { useAuth } from '../data/AuthContext';
+import { useBabies } from '../data/useTrackerData';
 
 function NavItem({ to, label, icon }) {
   return (
@@ -23,9 +28,108 @@ function NavItem({ to, label, icon }) {
   );
 }
 
+function OnboardingOverlay() {
+  const { user } = useAuth();
+  const { t } = useI18n();
+  const bp = t.babyProfile;
+  const ob = t.onboarding;
+  const needsParentName = !user.displayName;
+  const [parentName, setParentName] = useState('');
+  const [babyName, setBabyName] = useState('');
+  const [dob, setDob] = useState('');
+  const [busy, setBusy] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!babyName.trim()) return;
+    if (needsParentName && !parentName.trim()) return;
+    setBusy(true);
+    try {
+      if (needsParentName && parentName.trim()) {
+        await updateProfile(user, { displayName: parentName.trim() });
+        await updateDoc(doc(db, 'users', user.uid), { displayName: parentName.trim() });
+      }
+      const ref = await addDoc(collection(db, 'users', user.uid, 'babies'), {
+        name: babyName.trim(), dateOfBirth: dob, createdAt: serverTimestamp(),
+      });
+      await updateDoc(doc(db, 'users', user.uid), { activeBabyId: ref.id });
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  return (
+    <div style={{
+      position: 'fixed', inset: 0, zIndex: 100,
+      background: 'rgba(250,247,242,0.96)',
+      backdropFilter: 'blur(8px)',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      padding: '1.5rem',
+    }}>
+      <div style={{ maxWidth: 420, width: '100%', background: 'white', borderRadius: 24, padding: '2rem 1.75rem', border: '1px solid var(--sage-light)', textAlign: 'center' }}>
+        <div style={{ fontSize: '2.5rem', marginBottom: 12 }}>👶</div>
+        <h2 style={{ fontSize: '1.4rem', color: 'var(--brown)', marginBottom: 8 }}>{ob.title}</h2>
+        <p style={{ color: 'var(--brown-light)', fontSize: '0.9rem', marginBottom: 24, lineHeight: 1.5 }}>
+          {needsParentName ? ob.body : ob.bodyBabyOnly}
+        </p>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 12, textAlign: 'left' }}>
+          {needsParentName && (
+            <div>
+              <label style={labelStyle}>{ob.parentNameLabel}</label>
+              <input
+                autoFocus
+                value={parentName}
+                onChange={e => setParentName(e.target.value)}
+                placeholder={ob.parentNamePlaceholder}
+                required
+                style={inputStyle}
+              />
+            </div>
+          )}
+          <div>
+            <label style={labelStyle}>{bp.nameLabel}</label>
+            <input
+              autoFocus={!needsParentName}
+              value={babyName}
+              onChange={e => setBabyName(e.target.value)}
+              placeholder={bp.namePlaceholder}
+              required
+              style={inputStyle}
+            />
+          </div>
+          <div>
+            <label style={labelStyle}>{bp.dobLabel}</label>
+            <input type="date" value={dob} onChange={e => setDob(e.target.value)} style={inputStyle} />
+          </div>
+          <button type="submit" disabled={busy || !name.trim()} style={{
+            marginTop: 4, padding: '13px', borderRadius: 12, border: 'none',
+            background: 'var(--sage)', color: 'white', fontWeight: 600,
+            fontSize: '0.95rem', cursor: busy || !name.trim() ? 'not-allowed' : 'pointer',
+            opacity: busy || !name.trim() ? 0.6 : 1, fontFamily: "'DM Sans', sans-serif",
+          }}>
+            {busy ? bp.saving : bp.save}
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+const labelStyle = {
+  display: 'block', fontSize: '0.78rem', fontWeight: 600, color: 'var(--brown)',
+  marginBottom: 4, fontFamily: "'DM Sans', sans-serif",
+  textTransform: 'uppercase', letterSpacing: '0.06em',
+};
+
+const inputStyle = {
+  width: '100%', padding: '10px 14px', borderRadius: 10, border: '1px solid var(--sage-light)',
+  fontSize: '0.92rem', fontFamily: "'DM Sans', sans-serif", outline: 'none', boxSizing: 'border-box',
+};
+
 export default function AppShell() {
   const { t } = useI18n();
   const { user } = useAuth();
+  const { babies, loading: babiesLoading } = useBabies();
 
   const GUIDE_ITEMS = [
     { to: '/app/gratur',   label: t.sidebar.crying,    icon: <Moon size={18} /> },
@@ -57,6 +161,7 @@ export default function AppShell() {
 
   return (
     <div style={{ display: 'flex', flex: 1, minHeight: 'calc(100vh - 64px)' }}>
+      {user && !babiesLoading && babies.length === 0 && <OnboardingOverlay />}
       <aside className="desktop-sidebar" style={{
         width: 240, flexShrink: 0, borderRight: '1px solid var(--brown-faint)',
         padding: '2rem 1rem', background: 'var(--cream)',

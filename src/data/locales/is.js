@@ -258,6 +258,14 @@ export default {
     freeNote: 'Leiðbeiningarnar eru alltaf fríar — enginn aðgangur þarf til að lesa þær.',
   },
 
+  onboarding: {
+    title: 'Kynnum okkur!',
+    body: 'Við þurfum nafn þitt og barnsins til að byrja.',
+    bodyBabyOnly: 'Við þurfum bara nafn barnsins til að byrja að skrá.',
+    parentNameLabel: 'Nafnið þitt',
+    parentNamePlaceholder: 'Foreldri',
+  },
+
   babyProfile: {
     title: 'Barnasnið',
     addTitle: 'Bæta við barni',
@@ -366,9 +374,9 @@ export default {
   },
 
   footer: {
-    description: 'Vísindalegar leiðbeiningar fyrir þreytta foreldra. Gert með kærleika á Íslandi.',
+    description: 'Vísindalegar leiðbeiningar fyrir þreytta foreldra.',
     contentHeading: 'Efni',
     disclaimer: 'Þessar leiðbeiningar koma ekki í stað ráðgjafar heilbrigðisstarfsmanns. Ef þig grunar að eitthvað sé að — hafðu samband við lækni eða ljósmóður.',
-    copyright: 'Gert með ♥ á Íslandi',
+    copyright: 'Ábyrgðaraðili vefsins: Neðri Hóll Hugmyndahús ehf',
   },
 };
